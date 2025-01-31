@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=26164564000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>set correct RITM state when all tasks are closed (24.01.2025: updated run as system)</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>ritm_update</internal_name>
+        <label_cache>[{"name":"subflow.ritm","label":"Input➛RITM","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","column_name":"","usedInstances":{"673a1c6f-dca6-440d-9bfc-a9336112a93d":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7dd45946-afc1-4c54-bf29-afc8e83dddb4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"80361fee-207a-41b6-8c2c-2e9e152caace.Records","label":"1 - Look Up Records➛Catalog Task Records","reference":"sc_task","reference_display":"Catalog Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9cf2f310-b520-42ad-8b72-1061a34c0448.item","label":"2 - For Each➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"flow_variable.last_sc_task","label":"Flow Variables➛last SC Task","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","column_name":"","usedInstances":{"90cae1ce-7dc8-4ee9-9d4a-dc342b8891a5":["condition"],"87f69afd-ee22-46dc-a90a-c337d429a2c9":["sc_task"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"549aeebd-e19a-42bc-af07-37a5680cb9cf"}},{"name":"flow_variable.gentaskcount","label":"Flow Variables➛genTaskCount","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f9a047e8-b253-4ab6-b012-08b3a4b360e6"}},{"name":"80361fee-207a-41b6-8c2c-2e9e152caace.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.ritm.request","label":"Input➛RITM➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request"}]</label_cache>
+        <master_snapshot>0d9b859ac319c2102c03deee050131c1</master_snapshot>
+        <master_snapshot_digest/>
+        <name>RITM Update</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-03 12:53:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ab6945d6c319c2102c03deee050131fc</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>RITM Update</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Autobahn Incident" source="92fe5b6fc33275102c03deee05013166">92fe5b6fc33275102c03deee05013166</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_hub_flow_ab6945d6c319c2102c03deee050131fc</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:25</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=ab6945d6c319c2102c03deee050131fc"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ab6945d6c319c2102c03deee050131fc"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</claim_owner_scope>
+        <claim_timestamp>18ebcd9cd860000001</claim_timestamp>
+        <metadata_update_name>sys_hub_flow_ab6945d6c319c2102c03deee050131fc</metadata_update_name>
+        <previous_claim_app_version>1.11.1</previous_claim_app_version>
+        <previous_claim_name>Autobahn Service Request</previous_claim_name>
+        <previous_claim_scope>d80b6c02c3c04e502c03deee0501316f</previous_claim_scope>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-08 08:36:14</sys_created_on>
+        <sys_id>1a8eb133c31dc2102c03deee050131d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-08 08:36:14</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</claim_owner_scope>
+        <claim_timestamp>18ebcd9cd820000001</claim_timestamp>
+        <metadata_update_name>sys_hub_flow_ab6945d6c319c2102c03deee050131fc</metadata_update_name>
+        <previous_claim_app_version>1.11.0</previous_claim_app_version>
+        <previous_claim_name>Autobahn Incident</previous_claim_name>
+        <previous_claim_scope>92fe5b6fc33275102c03deee05013166</previous_claim_scope>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-08 08:36:14</sys_created_on>
+        <sys_id>da8eb133c31dc2102c03deee050131d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-08 08:36:14</sys_updated_on>
+    </sys_claim>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ab6945d6c319c2102c03deee050131fc"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ab6945d6c319c2102c03deee050131fc^sys_idNOT INa76945d6c319c2102c03deee050131fd"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ab6945d6c319c2102c03deee050131fc</id>
+        <name>RITM Update</name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-03 12:53:19</sys_created_on>
+        <sys_id>a76945d6c319c2102c03deee050131fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-03 12:53:19</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a76945d6c319c2102c03deee050131fd"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ab6945d6c319c2102c03deee050131fc^sys_idNOT INfd8b059ac319c2102c03deee050131de"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7dd45946-afc1-4c54-bf29-afc8e83dddb4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>RITM</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</model>
+        <model_id>ab6945d6c319c2102c03deee050131fc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ab6945d6c319c2102c03deee050131fc</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-03 13:02:29</sys_created_on>
+        <sys_id>fd8b059ac319c2102c03deee050131de</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-16 07:39:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fd8b059ac319c2102c03deee050131de"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ab6945d6c319c2102c03deee050131fc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ab6945d6c319c2102c03deee050131fc"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ab6945d6c319c2102c03deee050131fc"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ab6945d6c319c2102c03deee050131fc^sys_idNOT IN06c4bc69c39fde102c03deee050131d5,0ac4bc69c39fde102c03deee050131d1,0ec4bc69c39fde102c03deee050131d4,86c4bc69c39fde102c03deee050131c2,8ac4bc69c39fde102c03deee050131c9,cac4bc69c39fde102c03deee050131c8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:23</sys_created_on>
+        <sys_id>06c4bc69c39fde102c03deee050131d5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:07</sys_updated_on>
+        <ui_id>cbe17bd4-eea2-4791-950f-b60b08652173</ui_id>
+        <values>H4sIAAAAAAAA/+2U32vbMBDH/5Wi52DkOAlN3gYhkIe1kI6+dMXI0iURyLIryWmzkP99J1lO0590XcYYzG93Pt19v6cPutkRxp2s9FxbxzSHq62dCzIhwyKDbDRkPBuNOaS0z2kmAIAOaZqlxYD0iPR1AxA0HacjnqVZ1qe0fz5Ii1FWpH2RMYAU6zQrASsN8MoIjDdMNT6x29mmWKrqPjHSlYmBuwas2++xREhbK7a9jpWY4WuphAFNJje3PVIzg00dGDLZPfvltjXkihWg8OC04k0J2p3Np78guDu96BQ/d+BnYCxi91z6JP7yelLaI/DgQAvAcUumLPRIybRgrjJbMnGmwYQBJi612h4q1lK71mnJHqz8gf0H1NctAa3xuIVDmMcNdcupJIfL2l9km3GsUN3mKtWU+qK14HcLS9Yod7TbxmI/qL1kL6JVuLxaV/eLbt5M6uAuqlUVZ+oQMeeMLBoH1l8HKAhLKVldS73Ka1NtZDiMUspkpTBI/LXjTCtXOmkBTHBBLJlhfhrS18xIb+IrtsHD+2A+v2v83NZGFJwHz8FwHi4KSy03snZfsPEGosx973dRL4bvkcPHj6AciXnE3fI8Iv4S8MXhx+c4/+YHnl20Az8q9snhN8RH0p/kIujDk4F+/pdAj4r+MdL/GN+0/+7LeIRIQNoesc2Cku8Nxc5BzUvEXyv5JOxQYmMHZ23rj6vvGswkKGFfsdPRHgfkmzjg8LSfDPl0RMP3/4U/4Qt/+xOcwgEQzggAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update RITM">a7e72b15c34d86502c03deee050131f8</action_type>
+        <action_type_parent display_value="Update RITM">5ca6ab9dc30d86502c03deee05013195</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>a7e72b15c34d86502c03deee050131f8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>90cae1ce-7dc8-4ee9-9d4a-dc342b8891a5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:23</sys_created_on>
+        <sys_id>0ac4bc69c39fde102c03deee050131d1</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:07</sys_updated_on>
+        <ui_id>87f69afd-ee22-46dc-a90a-c337d429a2c9</ui_id>
+        <values>H4sIAAAAAAAA/5VSy27bMBD8lYJnWdDTdnwrUgQI0DZAneYSBMKKXNpEKUohKSeq4X/vUlINt8klR84Od2dm9/HIgHvVmlvjPBiO28HdCrZh61WyXmJd8LxMUiyTQmAiEi4TeuapyFjEVOBBjqusTkueF2K9LJOMJ7lAxIknOfEMNEhMxysP7hcBB9B9QI5HqduX6gBWQa0x1uB8NdNOJyIK5ToNw8PMJ4TvlRYWDds8PkWsA0u9PVq2Of5X8kOHlYYaNX38gRKpwvEDqv/+3V5X95PsNz7CDALsRffWiqAmjRi+ejQCaZoE7TBiDRgBvrUD23jbE2ARxJ3Rw5mxV8ZPNht4deo3Nc+z6KL/5fAzWs0pUfUaPOh292kWzPet4njXhf1OfX3I+Z82vNV9Y75P1kLkKKHX/iLy3tEI7IKZIG/WKrf79uWc640yo++5qFsO+vwC762qe48urKlX929jm8Cv76wLNTY0t2qg65TZVZ1tD2qcRdKbeKfpEY9nJNCpnYmnc44paohvCP8ywg/zjX2jNvQ5TPxp1HOP47HL1VKuc5ktSsmzRYFYLK7qdLmQGUIqMYfiqmSnMfPquQ/WpqjmUKopXiI4blXnP5OEA87+T09/AKhZq7RkAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>7695149f-674e-46c3-9f09-d57a3f81b71b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:23</sys_created_on>
+        <sys_id>0ec4bc69c39fde102c03deee050131d4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:07</sys_updated_on>
+        <ui_id>673a1c6f-dca6-440d-9bfc-a9336112a93d</ui_id>
+        <values>H4sIAAAAAAAA/+2UUWvbMBDHv0rQczBynGRp3gohkIe1kI6+dMXI0rkRyLIjyWmzkO++ky2nabqVrssYg/ntTqe7///0w3c7wriTpV5o65jmcLO1C0GmhH+ikzFkQ56MaAwjOhRABeU5xTCJYUL6RPq6IQgaX8RjnsRJMqB0MBnG2TjJ4oFIGECMdZoVgJUGeGkExhumap/Y7Wyd5ap8jIx0xX6PR0LaSrHtbajADF9JJQxoMr2775OKGWzmwJDp7uTIbStIFctA4cVZyesCtOstZr8gtLu97JSeKvczMBaheyp9Eo+8npj2CTw50AJwXM6UhT4pmBbMlWZLps7UmDDAxLVW20PFSmrXOi3Yk5XfsP+Q+roc0BoPWziEadhQt5xScriu/AO2Gccy1W2uVHWhr1oLfreQs1q5o93WFvtB5SV7Ea3C/GZVPi67eXOpG3dBrSo5U4eIOWdkVjuw/jlAQbOUglWV1A9pZcqNbC6jlCJ6UBhE/rlxppUPOmrBi3BBLJpjftakb5mR3sRnbIOX9435dF37ua2NIDhtPDeG0+ahsNRyIyt3iY03EGTu+7+LeDZ6ixx+8QzKkZhnzC1PDaxT6aB4TfgS1jVYB6K3aM8/xvsXP7h31Q5+r+gXl39iIhD/IheAH50N+MlfAj4o+seI/2Oc08Gbf8gjRBq07THjjjn4WlOaiOQ15CenH0QcCuzpoNd2fb/mrsFcghL2ByY6xsOAdBMGHH7sZwM9HtPm+/9/P+P//f472fgBc8QIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:23</sys_created_on>
+        <sys_id>86c4bc69c39fde102c03deee050131c2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:07</sys_updated_on>
+        <ui_id>80361fee-207a-41b6-8c2c-2e9e152caace</ui_id>
+        <values>H4sIAAAAAAAA/9VX30/qMBT+V8ieCekYIPh2ozHxQU3U3BevWbruDBpLN9sORML/fk/XbSCgFwhe9bGn58d3zr6v7R7mHmWGp/JSakMlg7uZvoy9Uy8Z9CPSHVAW+APW9kmbkSAGANIlfuAngdf0uPXrJx1CqN/tnxASBIT0egGjfhQFPRaRqBOhn6RjQE9DIwG4nFCR27VmoaH6CS0x15mgs9/lxhk1VKTDxr3bZSMuYgXSO314bHoZVZjOgPJO52tbZpZBKGgEApPc22qNa1t6d6RvgjeR2wLVMpQudapii4U0PXgxIGPAUgkVGpremMqYmlTNaosCGt9IsTSMuDSY0bPOL5q/Yvo+sX4JYFsM3F69DMtJOTMbpZzBTWY/n7M4oG4zFflYXrsG7Iwhobkw1YzRkmvMB5nFbEGUiJK7UTq9rQpecFm0V26KlFFRr6gxike5AW2/BQgYY6JwTLOMy2GYqXTCi2DEMm4NBS5aiUinWFTzoWw53rVwRLR1gfbzwvybKm67uMI0GIyAuMCvHbqh6zRXxVQmIRO5LjYUldrl8hbFrMLn3KJ0XZf9hW5E6KCZ4pn5hQETKFtZND9XBV2y5BJLZcxtKb0iBQXPOWgTcgPjPzmmiOdznUd2Wi3FzXix2FTJTjGHaedsFeOu/W0N3tZ0qaI3tlJF/tFUhHC/SEdG5d9PRv8Shmv4s9TBTj5kT3dJFJ0qE7qRr94UhhrYVEBlPozkFxxE/OaC2AFmFXxj+dqIZu8hLzme2BprN0X7x98U35LhCCgO3by5FFwWFzUC/WLqk48PzsEagQrerBDf2qhmm9ynDZM2Xg8/4QtC7AGyCrxDRI17h3IL8Opsr9KXnA+OxvmgvR/nkXEP8xp9PbUtA64ecvabV/6v1p+u+yMtVwL8xWOtmbPDavr71mzbmmuiDvZS9Sqz3M75OwQ78jPxHZU2P/NYGGFoWS90Kg+nPB6CWVavvOLUTKl42rZfsqvWUNHe1z05Ox+KtucvBYriCRVo/Marb04fX0ib54rfdObDjpVLaWBYTH1XiFXkFX1p3NYYtwIvzxZe1yjF0Dnio/F/XKjV4LfKrpr/j/g5O5T7j38B5mMdhHYQAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>9cf2f310-b520-42ad-8b72-1061a34c0448</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:23</sys_created_on>
+        <sys_id>8ac4bc69c39fde102c03deee050131c9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:07</sys_updated_on>
+        <ui_id>90d35f97-a845-46d6-ac40-e778a1f1ff8d</ui_id>
+        <values>H4sIAAAAAAAA/+1VTU8bMRD9K6s9J5H3IyHJDYGQOBQkQFwoWnnt2WDhtbe2N5BG+e8d70cI0CKgqapK3ZvHM/PeGz+vb9YhZU5odaqso4rB5cqe8nAeMpjm6XhGWRLNWByRmJGEAwAZkyiJyEE4CIXPS4GTaBZNMC9JYkLiaRrlkySPYp5QgAjzFC0BMw0wbTiul1TWPrBez1gRF9htmI9jMkxjyofT/CAeRmQS0SRlJE2nI+Gg3GywjgtbSbq67soxwu6E5AZUOL+5HYQVNYjkwITz9Ystt6ogkzQHiYXHmtUlKBecHn9ARV990ct4Kctj4Jp33TPhg7jl+URkEMKjA8UB4QoqLQzCkipOnTarcO5MjQEDlJ8rudpm3AnlWqUlfbTiO/ZPic8rAKWxbgrbZdZNqB+OFgzOK3+6bcTRXPaT07Iu1Vkrwc8WClpLtzPb2mI/qDxlT6JlWFze6YeLHu9EqEZdx1ZqRuV2RZ0zIq8dWH8cIKEZSkmrSqhFVhm9FE0xUilHC4mLUSH1A2JasVCj1pUjHBAdnWD8uAlfUyO8iC/YBos3jfjsW+1xWxkd4azR3AjOmoPCVMuMqNwhNl5CR3Mz+F3/5+O3nMNmT0bZIfN0ByzLHLX3r919hMKlXgRX7e7nnH7lIYOzFvK9dJ8V/4J+5/Vnsc7q471ZffqXrN4x+se8/sccTuI3/407FmlMbXfc/aDNfaY0zuVrTbD7kdQWJxIwrQphSuBBvgq84tf+/0jpJy8HlAjoIGgh36+2b3AiQHL7E/n97egAsmUHsH0M9nZFoglpvv9vwh7fhNsf5FjVpRUJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>9cf2f310-b520-42ad-8b72-1061a34c0448</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:23</sys_created_on>
+        <sys_id>cac4bc69c39fde102c03deee050131c8</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:07</sys_updated_on>
+        <ui_id>78e3139b-821d-47bf-9855-9e52002171b2</ui_id>
+        <values>H4sIAAAAAAAA/+2XW2/bNhTHv0qgZ9MjKUqm8lbYDhZgawDH7R66QqCoQ5uYLLm6pPWCfPdREh3Ll3huri3QRx7xHP7P5Wean24dIUudpZdpUYpUwvWquIydc0fFPGJeIKRLAkkJphK7MQBgDxOXYOz0HF3vY4EELhjhA0IxJtj3XSlIFLm+jHAEzOxLxQLMzhxklsdmfSOSqjbc3gZSUWWiocijGDEqYsSjAUUmDBEuk5gx3tclLO7ujF+si2UiVh+tu7HIuU7iHFLn/NPnnrMUuTmphNw5v935VK6WECYigsQ4jjJZLSAtzy5H35HF2nuyTmM3rfoMs45t9FDXRvOp1kN6DnwrIY3BnKZEUkDPWYg0FmWWr5zzMq+MIQcRX6XJ6n7HXKdlm+hCfCv0vya8S+t9Ckxm0hbhfhnaAq1rk2kJV8u6ua2lFFGyLlyWVIv0fZtBXVpQokrKTmmrwsSDZS25FtEqVNfz7Otkfd6FTpvkrNokkyK5X4myzHVUlVDU3aj09FB1WvMfB/uidGJaGTaiwyKr8ibfyXh4NRmFf72bDn8fT8LJ+Ho6uRxOx7UHJNCEXojlUqezcJlnN7pRaPJd9GeJWfRVkn01iRV6lvbbye+bLoj+hbGPGvNHkev60D9NGONcq/yQ6i8VNFwwpcz8+z4iBLuIkchHAQcPYfAE8yjzPZ86d01Xwi9VXZC2vraSYdOMNqlmgMzWQuZ6Wb4zYm7A1u+u92QuvaMTLTYD3BGzYbOQpvLFP/vUDU2xkmx2Nm2/Po7AaX3k2fv2yFPlbjk/IN8yuGWzCNLjCFrLKQxy/DYMWkVPh3CrPNsMbnemCNvZtKKbqK8FGiU84CxykWvmHbFAKcQxZ4iBwNKj8YAR+b+gvRxexy8MtZlPmaWxro8qOniJRs3fFTbR11XdAe3QlsfRNuwqOFX9QedDKVnktmwWOfe5bj2G8Rsx91z33lZ5tpHbqvCroAUx9yMPcwSKc8TcAUcBoRT5vogJYTJW+Ie4w3B8bExV579lqReQVWWoEjHrYIb3sXoaSlMzDr9d2BCnalw7j9Pmx9VqfVC8BSrKsgREuqGJPdsFxn72C2xTm53bq9ueV0FJSsHNdSRQ4EpAzI8k4koq5ELkKdeLzHMGv90tJY8PZ7A/g3GVi6bZG4ie8+W1iX6qvgOuD0u26DSt7dotQd4vgtYE7ZVo5ym2+fBSGM2N30isirqTBtt9sICIgRfVryuBGA0IEgGjKPBhAExx3xXB24HFydHBVftTWsg5xFUCLwPW/Sx8h8C17/VG2cOaLVl55xwLlf+M76rdf3lykXZFHEKso/4HRa1bs23Kul17nduKUmLmWSISm39/jPoUcZcN0CDgEWZmLiIXHg3V5/8AWH7FYUwUAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ab6945d6c319c2102c03deee050131fc"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ab6945d6c319c2102c03deee050131fc^sys_idNOT IN06c4bc69c39fde102c03deee050131c7,42c4bc69c39fde102c03deee050131cd,86c4bc69c39fde102c03deee050131d4,cac4bc69c39fde102c03deee050131d0"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b18b059ac319c2102c03deee050131f7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:23</sys_created_on>
+        <sys_id>06c4bc69c39fde102c03deee050131c7</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:23</sys_updated_on>
+        <ui_id>9cf2f310-b520-42ad-8b72-1061a34c0448</ui_id>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhj+2LMmtwFCgh61AV/QyFAYt0YkwWdIkOaln+L+PjJ106HEnm4/ke48iR+H65PsUn91djPpgxf7n60poyxj9j8JCh2IvdMIuipU4gek5HsdtXm2KFnFd5l9g/aloNuutLOW6xB0Wn0sJIDF7QumCitNErUpHb2B4+X8GedRGBVxMegjkLWEQ+/FDKg0eawMNGhJaGKhfKwqLnWp3Rb6TVbmpyjwvt6xcNUWpKkC1obpr58My9Ic3YHYKw42XPuyizFcC3xJahSTUgom4Eh1YBcmFQexT6AkICOrRmuFWcdQ2EZ3g2reo/xB3kedc2CJNJHFO3sJ6ecgZlkenJT76pJ2dkQSNWXqkM31nv8/2eQXYQm/SdQWE9JH40LNndrFYan8c3fnpKniv7WW+JWmcBHOLIKWgmz5h5DWgwY6I6g681/ZQ++BO+tJMXrrsYCjIWuPOJMrnloFk4xk9EWT3hH+9wC8QNE/xjWioebpMX//uWXeeY3Fcz0NTQZRB+3RHdCdczE2vfK8zU5wPQ6HUkQSfGXu4XjknBlqylv9CZxd+sdV3bPoL8WTTGi8DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">868b459ac319c2102c03deee0501310a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</flow>
+        <flow_variables_assigned>last_sc_task</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>9cf2f310-b520-42ad-8b72-1061a34c0448</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:23</sys_created_on>
+        <sys_id>42c4bc69c39fde102c03deee050131cd</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:23</sys_updated_on>
+        <ui_id>ca2bd445-17ea-4dc1-bc9b-7d631025f844</ui_id>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9lYBnS6AWx8stSBHAQNoAtZtLEQgjamQToUhFpOy4hv+9Q0tekqbHHgrkZr3RzFs0A++YaV3dOrswN9bKpWbTn08DJrXH6PeOaaiQTZkC6zIrMgf2mQ3YGlTr4d1uIsq4TCIe5MOYB2kMRTDOR3EQ8esIklTwNB2H0mG131NfIW2tYPvYtxMiVlIVDfbENTTE57Bh0927ktvWmCnIUVHjdyyRKgJpgiwIKIfjnA8nIJJoIuKIx4InBSLyIY+SCEf03rHXW7ma314tOisfG/RshDYXPKYpvC4+YPjqUBdIvCUoiwNWgS7AmWZ7QhqE4kGrM7CS2nWOK3i18hdNT+LBBcGUndlPaNYHRtVbcKDM8ihbrIwU+FA7aXQ310Gu3o4RRrWV/tYZ9OljCa1yF+m3liiw9m68vF5rOV+ZzSniO6kPxvuiMgLU6Qmca2TeOrT+i7Vy8WduHXj/wZdDhRXxZhXUtdTLrG7MWh64SHoVLhU9hKUyG9LolzME4e2GlDWEd4R/OcCP0Ejv/SuNoWbP+EPLlxZnfjOG6QQQ8yLAaAK0oLkIoOSjIBnB8HrMRU4bzPaHzLOX1lvroupDybp46QUrGlm7G5Kwxt7//smfQsfenYtXe2+WUsy0dUA251t7kJHiOE//uqAcjov8bg//9fl9Htznwf1nB1egkJZULbyE2fGfyhe2tFr+8s7QxjTP3s8Z2/8GuEWfNvMGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0f086eb4c3501e504de0d0cf050131e0</block>
+        <comment/>
+        <connected_to>90cae1ce-7dc8-4ee9-9d4a-dc342b8891a5</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:23</sys_created_on>
+        <sys_id>86c4bc69c39fde102c03deee050131d4</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:23</sys_updated_on>
+        <ui_id>7695149f-674e-46c3-9f09-d57a3f81b71b</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b6086eb4c3501e504de0d0cf050131c3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:23</sys_created_on>
+        <sys_id>cac4bc69c39fde102c03deee050131d0</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:23</sys_updated_on>
+        <ui_id>90cae1ce-7dc8-4ee9-9d4a-dc342b8891a5</ui_id>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K0HPxvijCWveSrdCYGlGEwpjFHEty4moLHmSnDQz+e+78kca1nTtxh73Fp37cc65PqQhunZV7exKX1kr1opMvz0ERCiP4e+GKCg5mRKmVS6c0Iq2QEC2IGtfuJut5iOsOhDKjhzYRyzmwlYS9ve/62EbIXPDe8YKDO513JBp80vJ7StOJWRc4qqlM0KtcVzk+CoiKOJLFrM0maRJFCUfLuJskmZxkqfAIcW+YfB6MDD63CLBq848H+J2YNIm97LiKCD8yXGVc6QuQFoekBJUDk6b/RExHPKFks/ARiiH64hvfrLiB+5OxmPfWHD0yHhXPD5pf7wOZhstGF9UXmCHOMhkP8O0rEt12/nwZ+cF1NINZ0ektriPV160V9FLKpYbvbsbCG+Eag32RakZyOMLHJ4hqx23/sNwyUtcREuoKjwOrYzeinYYtZThWuIjLKTeIalPUwjMCw/xRhDeIP6xhe/BCO9ijmtwuJOZgRWMtsnDdc6ghUN7Fvq99oI6g70V2l0DGywzonJXyLPlvepD8DK2J4ltmlbhthcRSrCOWkZ9Lg+H2fJ2sfo0/7L6+jLHfzD5L9J9CeNiHEfj8+m+mJxL95lcvx7p5I1I+4/wzkRHUfQ/0qeRFpZ20ey9teR/negHH9+OwXa5yTkTFoWsPDYb/q99YY8BEOwU2mnz6C08Y4efzalmf/kFAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ab6945d6c319c2102c03deee050131fc"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ab6945d6c319c2102c03deee050131fc^sys_idNOT INf58b059ac319c2102c03deee050131e7"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=549aeebd-e19a-42bc-af07-37a5680cb9cf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_task</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>last_sc_task</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>last SC Task</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</model>
+        <model_id>ab6945d6c319c2102c03deee050131fc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_ab6945d6c319c2102c03deee050131fc</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_task">sc_task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-03 13:02:29</sys_created_on>
+        <sys_id>f58b059ac319c2102c03deee050131e7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-16 07:39:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_ab6945d6c319c2102c03deee050131fc^sys_idNOT INf18b059ac319c2102c03deee050131e3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ritm</element>
+        <help/>
+        <hint/>
+        <label>RITM</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ab6945d6c319c2102c03deee050131fc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-03 13:02:29</sys_created_on>
+        <sys_id>f18b059ac319c2102c03deee050131e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Autobahn Incident" source="92fe5b6fc33275102c03deee05013166">92fe5b6fc33275102c03deee05013166</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Incident">92fe5b6fc33275102c03deee05013166</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-03 13:02:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ab6945d6c319c2102c03deee050131fc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ab6945d6c319c2102c03deee050131fc"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ab6945d6c319c2102c03deee050131fc"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>set correct RITM state when all tasks are closed (24.01.2025: updated run as system)</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>ritm_update</internal_name>
+        <label_cache>[{"name":"subflow.ritm","label":"Input➛RITM","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","column_name":"","usedInstances":{"673a1c6f-dca6-440d-9bfc-a9336112a93d":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7dd45946-afc1-4c54-bf29-afc8e83dddb4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"80361fee-207a-41b6-8c2c-2e9e152caace.Records","label":"1 - Look Up Records➛Catalog Task Records","reference":"sc_task","reference_display":"Catalog Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9cf2f310-b520-42ad-8b72-1061a34c0448.item","label":"2 - For Each➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"flow_variable.last_sc_task","label":"Flow Variables➛last SC Task","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","column_name":"","usedInstances":{"90cae1ce-7dc8-4ee9-9d4a-dc342b8891a5":["condition"],"87f69afd-ee22-46dc-a90a-c337d429a2c9":["sc_task"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"549aeebd-e19a-42bc-af07-37a5680cb9cf"}},{"name":"flow_variable.gentaskcount","label":"Flow Variables➛genTaskCount","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f9a047e8-b253-4ab6-b012-08b3a4b360e6"}},{"name":"80361fee-207a-41b6-8c2c-2e9e152caace.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.ritm.request","label":"Input➛RITM➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request"}]</label_cache>
+        <master>true</master>
+        <name>RITM Update</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-03 13:02:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0d9b859ac319c2102c03deee050131c1</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:24</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=0d9b859ac319c2102c03deee050131c1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0d9b859ac319c2102c03deee050131c1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=0d9b859ac319c2102c03deee050131c1"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=0d9b859ac319c2102c03deee050131c1^sys_idNOT IN499b859ac319c2102c03deee050131c2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>0d9b859ac319c2102c03deee050131c1</id>
+        <name>RITM Update</name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-03 13:02:42</sys_created_on>
+        <sys_id>499b859ac319c2102c03deee050131c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-03 13:02:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=499b859ac319c2102c03deee050131c2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=0d9b859ac319c2102c03deee050131c1^sys_idNOT IN0d9b859ac319c2102c03deee050131c3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7dd45946-afc1-4c54-bf29-afc8e83dddb4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>RITM</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="RITM Update">0d9b859ac319c2102c03deee050131c1</model>
+        <model_id>0d9b859ac319c2102c03deee050131c1</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_0d9b859ac319c2102c03deee050131c1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-03 13:02:42</sys_created_on>
+        <sys_id>0d9b859ac319c2102c03deee050131c3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-16 07:39:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0d9b859ac319c2102c03deee050131c3"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=0d9b859ac319c2102c03deee050131c1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0d9b859ac319c2102c03deee050131c1"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=0d9b859ac319c2102c03deee050131c1"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=0d9b859ac319c2102c03deee050131c1^sys_idNOT IN2ec4fc69c39fde102c03deee05013182,6ac4fc69c39fde102c03deee05013188,aac4fc69c39fde102c03deee05013187,aac4fc69c39fde102c03deee050131a0,e6c4fc69c39fde102c03deee05013190,eac4fc69c39fde102c03deee05013193"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RITM Update">0d9b859ac319c2102c03deee050131c1</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:25</sys_created_on>
+        <sys_id>2ec4fc69c39fde102c03deee05013182</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-24 09:44:25</sys_updated_on>
+        <ui_id>80361fee-207a-41b6-8c2c-2e9e152caace</ui_id>
+        <values>H4sIAAAAAAAA/+VXXWvqMBj+K9LrIq1Vp7s7OAaDfcAcu9kZIU1TDUvTLkl1Tvzv503T1qLdUHDgOJd9P5/340nSl7WDiWapuBFKY0HodKVuIufSicej0BuMMQn8Men5Xo94QUQp9QaeH/hx4LgOM3ajuO952B+MLjwvCDxvOAwI9sMwGJLQC/sh2AmcULDUOOQUPheY5+ZbEaSxegNJxFTG8eq5VEywxjyddZ6slswZjyQVzuXLq+tkWEI4TaVzud5RHYqH45ByMH0qAe3g06us/kSFzspum26de6tIZWSgeK5DPzQVEQUMMeaKuk6CRYR1Kle1RFIcPQi+FcyZ0BDRMcYfin1C3pFn7GIKVRFqdfUnKhtlxfEV9GmqZU50LktTMk8Zocr2I6IxzrmeNGXW4CEzI7cutmzrnfI8Efe2HU4doJoLSHIFIGhmCjXIyzLi6TxdPlYor5koelIqeUowr7+w1pKFuTZ41g7lNIFAKMFZxsQMZTJdsMIZsCTdGYePbszTJSRVbCa6dle70FfcvQb5VSF+xpKZKu4gDDgDIMZhQ5AdoUpzWbRygQjPVaGQWCgby9m4jlqpCcdKbSuHlqP33OC2fSgrRrZpxoVIluk/EGJBy+I27s9yaeBtd5WkImImlWoQStL3nCqNmKbJ3xxCROu1ykPTv65kOtls9rl2kM8pGVhUUTFw0iyjrbSSi3uy27YAJRf9k3ER6vhNbITk50fG4+llW/BTHCMX327nYLuIKpUa2SE0by2NNd3nUSU+jioHgKmo8mCWuxOuvsJXMiVmlEdtt9a1UezcWr3/89Y6S54AoAjZ6THBmSieIAD07AjkfX+8j3cWtNjLBn2MDCuyzyDc0Wnn82gKHQCnotAUcneeLJ4WiNVdU+za7j1TCUvmBCdjTtA7DXPWdZl1I1t6Xj1XzRpU9p/GHu/aw+42HPxNGzOPyukfm7O32Wd+cBT1m8tmNVdf7NyJ37VfUNn9ybNjDq5lPmSJj5YsmlG9zV5ZRaleYv7Wpi83DlWDKso7pzdy/1u+D/0tt4FiSFIFU28+kn140+0fPr5rxcedPQdgqfp4hz86jzWYVoTl+QNHBJ0VQ20eQDe1tGRH/4Sv3LO9u6thtZK3mtmv+Cc9HYNe/wEPyr65sxEAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RITM Update">0d9b859ac319c2102c03deee050131c1</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>9cf2f310-b520-42ad-8b72-1061a34c0448</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:25</sys_created_on>
+        <sys_id>6ac4fc69c39fde102c03deee05013188</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-24 09:44:25</sys_updated_on>
+        <ui_id>90d35f97-a845-46d6-ac40-e778a1f1ff8d</ui_id>
+        <values>H4sIAAAAAAAA/+VVTU8bMRD9Kyufk8j7kZDkViVCQqIgAeLSopXXng0WXntre4FtlP/e2a8QAUKg0gNqbp6ZZ7/3Mi/5sSWMe2n0iXaeaQ6XtTsRZEk4zLNkumA8Dhc8CmnEaSwAgE5pGIf0iIyIbOYSEDRchDOci+OI0miehNkszsJIxAwgxDnNCsBJC9xYged7pqqmsN0ueB7leNs4m0Z0nERMjOfZUTQO6SxkccJpkswn0kOx2yFOSFcqVl/3cKzwW6mEBU2WP25GpGQWX/JgyXL7rPVeqoploHD0YuD6nLuvy+YsDK8K0D6VQ/G0R677TnCyxg6CGjohHRF49KAFIJGcKQcjUjAtmDe2JktvKyxYYOJcq3o/cSu174QW7NHJ3/hyQpu5HFAZ703YH9PeoK6cr5lnl3gz95Xd+2UkB9d5IiBnlfKrw1o3cF42G9FBPMvUgDaqKvRZ5wjZX3DwfVQOSUDZ6GyYd7Lyy1vzcDGQPJa6taSXqAxnan9i3luZVb6hsyWgoPW4YGUp9SYtrbmXLRipFJONwsMkV+YB33RyoyfdJk/QVTY5xvq6LV8zKxsR3/EaBO9GxNVupZhzT1LQw/RX1TDphPUS0taF1oK03YQGzK0s/Td86h564rvR36Yom761mnzxtIkHZJ6S5Hjqmbt7mZEVWqHMJrjquh/LyztIDXm5arfkdZJ9ZF7UTg+xwVnX6AMz/bTAzL9SYHoZXz4x/ywnNHrzJ/xgBdtouIOMPBh7l2qDTv2sKN6+UsahRwE3Ope2ABFkddB48DJFH4F+LGLv0DNE7FiCEu4VgUO+oEDOHtJO8LOM9c3gum/u/5g+LWjhjLafLxS3/+b/6eYPaXaZAOcJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RITM Update">0d9b859ac319c2102c03deee050131c1</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>9cf2f310-b520-42ad-8b72-1061a34c0448</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:25</sys_created_on>
+        <sys_id>aac4fc69c39fde102c03deee05013187</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-24 09:44:25</sys_updated_on>
+        <ui_id>78e3139b-821d-47bf-9855-9e52002171b2</ui_id>
+        <values>H4sIAAAAAAAA/+2XXW/bNhSG/0qga9MjJUqmclfYCRYgawDb7S66QjiiyJgYLbn6aOsF+e+jJDqSP+KljRskwC55yEO9fA8fH/PTnQO8VFl6lRYlpFzM1sVV4pw7MmEx9UPgHgm5S7DLsZcIIbCPiUcwdgaOqtfRkAsGlLARcTEmOAg8DiSOvYDHOBbUrEthKczKXPAsT8z4K+iqDtzdhVy60uyGYt/FiLqQIBaPXGS2IeBRjillQ1WK5f29yUtUsdKw/mjTTYQvlE5ykTrnnz4PnBXk5kulyJ3zu52pp0rVEAttlk43Wne1l+tVPU4yXi1FWkZqE7y2mRM7c3Y1MTMmqZZDBo74Xoo0EUaHBF2IgbOENIEyy9fOeZlXJpALSG5SvX5YsVBp2Z5zCd8L9Y/5sOfW66QwB+PWg4dhZP1pw3ICJczMzrys8ge7MsVF0VqSCAmVLsf9WLvgZlVfiDalhFhvsjNdLdP3rSHOwwa9clSFESFW9Tlr5e2x5GyRfZtuRF6qtHHEHlFnHPTDCMoyV3FV1nLunErND5ndhg/bLZU25Y8a0VGRVXlj0vRifDOdRH++m49/v5hG04vZfHo1nl/UGUKLZuslrFYqvY1WefZVNQrNeZfDW20GQ6mzb+ZghbpNhy0tQ1M6GF6a+KQJf4Rc1R/9w2xjkmuVH1L1pRINS1RKw0wQIEKwhyiJAxQy4SMsfKC+SwM/cJ37gVOsi7GGoug8NsWNvlS1Ra3j1tuoKU97zOaG1sk8V6vynZH3VVhH7wfPpts/igx0hPTEdIQX3NSi+Huf3bGxT2e3Z/N29gc5/m9RG47nzfU9LNKivBe77ueevW8nLMjucZBtpCO5ReAAyAy/IZDtsZ5P8pbX2yBvua2KqL3OVnSz60vR6hIWMhp7yDOIIBpKiRhmFFEBmPtuMqKE/wStv47R421NdtefZ2mi6k8VPUahUfNXhc3uG593aD205KStV/aQHfdFHhJuud2LXR/awHLrnaoBU4zfErmnasFbZm+Du2X3iwAqEhbEPmZISMYQ9UYMhcR1URBAQgjlicSvtJ3i5BgGsvdnuVRLkVVlJDXc9mDF+3D+HJBPULIB8iJtfpqtokclWizjLNMC0t1eau7hb5dWqWWS/mAvPQblG0LyZM20c3qnk/a9fhEgOQdmWiOg0OMC0SDmiEkukSdiX3p+bN50+DV1TH788of7dzypcmjK36F4ggfpE3RsIJx0Ah6XZhFsirobv97fyHLo/8/hszjcs3vnhdpN/CoYFyZvAuuivhUG/n08BYGRH9ePTkDUDQmCkLooDMRIUMkCD8LXhCcjR7GQ+wwUfCGSSovT4vkEHRs8Z52Ax6VZPDtCtsmc9uIWzeBkaLK9/618mfbFHQK1d6o3CaycCcj54lIJXdfTvjsfwbhflm2C+4V5mX7qusSQwRFJzL9c6gYuYh4doVHIYkzN1Ys9cUJgP/8LmVKKkgUWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RITM Update">0d9b859ac319c2102c03deee050131c1</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:25</sys_created_on>
+        <sys_id>aac4fc69c39fde102c03deee050131a0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-24 09:44:25</sys_updated_on>
+        <ui_id>cbe17bd4-eea2-4791-950f-b60b08652173</ui_id>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5XPVZQ0bQW9ragqVWJBKisuLIom9rRYcpxgO0C36n/fceKEChAqgj2gzW2+7Pde5iU3OwbcyVIvtXWgOV5t7VKwGZvkKabTCfB0esoxiUc8TgUixpM4SZN8zIZM+r4xijg5TaY8TdJ0FMejk3GST9M8GYkUEBPq01AgdRrkpREUP4CqfWK3s3W+VuVjZKQrIoP3NVq331OLkLZSsL0OnZThd1IJg5rNbm6HrAJDhzo0bLZ7UToWlYIcFbWuOlgvYbpt5WNR8rpA7TLZJc/D5DxUBss5VWjIw0niIcMnh1ogAVmDsjhkBWgBrjRbNnOmpoRBEJdabfuOO6ldS7SAJyv/0M3j2PetkZjxIEIfZkGgNr2eg4MrOpm72vR6lZKjbTURuIZaubPDXNtwWfmX3444yFU3Xaq60BetIqw/4OB91JZAYOV5euQtrfXVXfm46kAupG4kCRRVyUH1EThnZF47D2fHUGGjcQFVJfUmq0z5IJthglJEG0VB5FeF7rRyo6N2aSNSFaIF5edN+hqM9CR+0jE0vB8yu7VnCqx9pkIaZve1R9ISCxSyRoVGgqzZBD/MjazcD7rqAQPw/fCzhskn760mP33exAMwz6axPAtGeW2TVV/4mFuOgNS55VezI29DDIZ5lTs/nB1ctIVgl8mX2eXkO9kl0Pj2fvlnLolH737AD1awMYY9cAg0SH7XMZ3coHltlLdaPmaZI/B1lllIVMK+AbjzCxaEzWHWEnjhmVAcXIdi/5v5MuMk07h5vpF9/pu/ze1fsDtaMKAJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update RITM">a7e72b15c34d86502c03deee050131f8</action_type>
+        <action_type_parent display_value="Update RITM">5ca6ab9dc30d86502c03deee05013195</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>a7e72b15c34d86502c03deee050131f8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RITM Update">0d9b859ac319c2102c03deee050131c1</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>90cae1ce-7dc8-4ee9-9d4a-dc342b8891a5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:25</sys_created_on>
+        <sys_id>e6c4fc69c39fde102c03deee05013190</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-24 09:44:25</sys_updated_on>
+        <ui_id>87f69afd-ee22-46dc-a90a-c337d429a2c9</ui_id>
+        <values>H4sIAAAAAAAA/41Ty27bMBD8lYJnWdDTdnwrHBgI0DZAneYSBMKKXNpEKUohKSeq4X/v6gFHbXrokcPh7uzM8unMgHtVmzvjPBiO+87dCbZh61W0XmKZ8TSPYsyjTGAkIi4jOqaxSFjAVM+DFFdJGec8zcR6mUcJj1KBiCNPcuIZqJCYjhce3E8CTqDbHjmfpa5fixNYBaXGUIPzxUS7XIgolGs0dI8TnxB+VFpYNGzz9BywBizV9mjZ5vzX1f+K01CiJup+WzyM6j7I9V3TAxYlUnmOE/Rlevl9htdW9GLigOGbRyOQVEjQDgNWgRHga9uxjbctARZB3BvdXRlHZfw4ZQVvTv2ipmkSzPrORV3RYjKJbrfgQdeHT9Mg8pbOe2rGfWuv/tWKoxs9Eiih1X47x0bCfdPvxPjE99n80ZvXuq3Mt9Endq0zi6l1pAub3oF+pmlAuT/Wr1e7dsoMZk2XuuagZ1QEy487hboP0rRVSdyAgfdWla3v5Z5Zqx4+ZjOC/0oHNVakp6igaZQ5FI2tT2rQQCNV4UHTIRxWUqBTBxOOXyOk3CDcEX47wI/Tvn6lMoOoVv0w6qXF4ePI1VKuU5kscsmTRYaYLW7KeLmQCUIsMYXsJmeXgLnObWnh3buNNETx0vYmjKZO9hVjEP0TblXjP5OoE05OXZ5/AxRi7D3CAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RITM Update">0d9b859ac319c2102c03deee050131c1</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>7695149f-674e-46c3-9f09-d57a3f81b71b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:25</sys_created_on>
+        <sys_id>eac4fc69c39fde102c03deee05013193</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-24 09:44:25</sys_updated_on>
+        <ui_id>673a1c6f-dca6-440d-9bfc-a9336112a93d</ui_id>
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K0HPJshxkqV5Gw2FQNdCOvrSFSNL161All1JTuuF/Pdd2XISklJa1j2U+e1+Secc32PfbQjjTpZ6qa1jmsNNY5eCzAn/RmdTyMY8mdAYJnQsgArKc4phEsOMRET6vjEIGp/FU57ESTKidDQbx9k0yeKRSBhAjH2aFYCdBnhpBMZrpmqf2GxsneWqfB4a6YrtFktC2kqx5jZ0YIY/SiUMaDK/u49IxQwe5sCQ+eao9F40imWgsHXVwzmG55rKx6LkdQHapbJPXobJRagMlgus4JCHE9OIwIsDLQCB5ExZiEjBtGCuNA2ZO1NjwgAT11o1u45HqV1HtGAvVv7Gm8fU9+WAzHgQYRemQaAunS+YYzd4Mne12elVSg6200RAzmrlzg9zXcN15V96N+JYpvrpUtWFvuoUIbsDDt5HbREEVJ6nR97Rym8ey+dVD/JC6laSQFGVnKldxJwzMqudh7MhoKDVuGBVJfVDWplyLdthhFIMHxQGQ78ieKeVD3rYLesQVWXDC8wv2vQtM9KT+IHH4PA2Irax54pZu6eCGqZPtUfSEQsU0laFVoK03QQ/zI2s3He8ag0B+Db6W6Nkk7dWk5/tN/EAzN4slqcGnlLpoDj1yQqearAOxGDZ1T/mmndA613zs92V16EG45zkLg9nB1ddIdhm8mm2mX0l2wQaX943/8wtdPTmh/xgBVuD2EOnOObgV01pIpJTqxxVP2aUd6DqjXIhQQn7CszeJVAgLAdpB/vIKaE4uA3F3U/m0+wST2n7fCHT/Df/mvs/0sj5JZYJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=0d9b859ac319c2102c03deee050131c1"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=0d9b859ac319c2102c03deee050131c1^sys_idNOT IN22c4fc69c39fde102c03deee0501318c,66c4fc69c39fde102c03deee05013193,6ac4fc69c39fde102c03deee05013186,aac4fc69c39fde102c03deee0501318f"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">868b459ac319c2102c03deee0501310a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="RITM Update">0d9b859ac319c2102c03deee050131c1</flow>
+        <flow_variables_assigned>last_sc_task</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>9cf2f310-b520-42ad-8b72-1061a34c0448</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:25</sys_created_on>
+        <sys_id>22c4fc69c39fde102c03deee0501318c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:24</sys_updated_on>
+        <ui_id>ca2bd445-17ea-4dc1-bc9b-7d631025f844</ui_id>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9lYBny9DmeLkFDgIESBugdnMpAmFEjWwiFKlwSeIa/vcOLXkp0vZewDfxcZY3b/igLdPetd7Zpb6xVqwUm/14HjChAkbfW1ZL/f6gV4LfK+tAcVxs7H3FZizHSZmPpsCzZMrTJE55nFWIGI/iJEtiYFQmxEmwrrC8cGBfCFPQ4Gf0DaQP8HY75XVaU35UjtI4ylOookk5TqMkvk4gy3mc55OhcNjsdpRXCdtK2Dz16YS0YKiDQ8NmW8bXQlYGD1MFOvVoUsZ/pY1jKiGhRNlzvFrMr5b/Yu42bUAN1kiNOPbQQ1/j2xmuTRVoxQOGHw5VhcSnBmlxwBpQFThtNkfEIFSPSp6AtVCuG7GBDyt+UtcsHZw1nrETqyNa9ArR7RwcSL06jFPf0nnhjOfOm148vtaCo+3kqrAGL938HOsCHlsntOpSHJTy995cS9+or51a7FjnbEfeEi9sgwRhpn7AerHW70e97oTaq9VfSs1BnoUiGL6+EyjDTpVvSoodMHDOiNK7QHfLvFh+Xk4H/mk9KLEhPkUDbSvUqmiNfhN7DjRSM1xJOgyDHYh7sMoQeJBhSIuD4R3ht3v4CYwImnyhMntSXnxX4tXj3jWjfAqIZRVhMgV63iWPoI7HUTaG0fUk5iW9f7YbMLuxc3pp9iQjDVG8+iBCJ2ovX9EtIqRwI1p3Q6TesFdq9xys1fG52Pli54ud/3s7V8iFJZ7LQOr+8J8OFxt60cHXJ+hdm5cw4Qnb/QKkitLS8QcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0f086eb4c3501e504de0d0cf050131e0</block>
+        <comment/>
+        <connected_to>90cae1ce-7dc8-4ee9-9d4a-dc342b8891a5</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="RITM Update">0d9b859ac319c2102c03deee050131c1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:25</sys_created_on>
+        <sys_id>66c4fc69c39fde102c03deee05013193</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:24</sys_updated_on>
+        <ui_id>7695149f-674e-46c3-9f09-d57a3f81b71b</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b18b059ac319c2102c03deee050131f7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="RITM Update">0d9b859ac319c2102c03deee050131c1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:25</sys_created_on>
+        <sys_id>6ac4fc69c39fde102c03deee05013186</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:24</sys_updated_on>
+        <ui_id>9cf2f310-b520-42ad-8b72-1061a34c0448</ui_id>
+        <values>H4sIAAAAAAAA/51Ty27bMBD8F55lQY/WtX0LEgQI0DaAE+RSBMKKXNlEKZIlKTuqoH/v0pKVIMeepB3uzs6MqIGZLtgu+Gdz4708aLb79ZowqSNG7wPT0CLbMRmw9SxhJ1BdrIdhk5XrvEFcFdk3WH3J6/Vqwwu+KnCL+deCA3BM98iNE34caVRIbxX0L//PwI9SCYezSAuOtAV0bDd8OpKCFuRb0WzzbMvLYl0WWVZs4oqyzgtRAoo1ESqoUVHrw+zuk9nQ21i6ScIMfJ9n9gtKjyiiyBKGbwG1QFrfgPKYsBa0gGBcz3bBdQQ4BPGoVb90HKUORMdi75uXf2ljnmWxsUEyxHE6XMpqznGCmzsI8ETUPHRubuVHIzn6KQqBDXQq3H7EpoZHG6TR00iAWl2njepa/XNKgi0E189GSOdJBNpoNEqffTRPR3PeX1XeS30JZT5UhoNaKgjByboLUc/AUGFLRFUL1kp9qKwzJ3kZJi1telBUpI0yZ1oar2gKPApPKVdI7wm/u8Av4GR08YNoaHhMmO/9rQLv371QiNWfLiqZnM0eqimGOMKdtOGGFpxwlju+xls/cS+ZculJwnPEHq7/Sjzo6QZJ/hE6G/c7in/Hxn/eiEyzdQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b6086eb4c3501e504de0d0cf050131c3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="RITM Update">0d9b859ac319c2102c03deee050131c1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-01-24 09:44:25</sys_created_on>
+        <sys_id>aac4fc69c39fde102c03deee0501318f</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:24</sys_updated_on>
+        <ui_id>90cae1ce-7dc8-4ee9-9d4a-dc342b8891a5</ui_id>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K5WfoygJBa28VXSVkEqZCqo0TVV04zhg1bEz24GyiP++68QBtLIPtD3uDZ/7dc7NPaIhqrZVbc1S3RrDV5KMv7wEhEuH4e+GSCgZGROqZM4tVzJtgYBsQNQu8DRdzq4waoFLc2XBvGIw56YSsHv+VQ5dc5Fr5idWoLGvZZqMmx9CPMcWRQRFfENjOkhGgySKkg/XcTYaZHGSD4DBABsKyJjA1ElP9eqhRYKfarC7yuHGai5X/v3guyx6UOncsYqjgLA3y2TOkE8BwrCAlCBzsErvDohmkM+lOAJrLi22Iy75zfBvODAZDl1iwVAiZV3w8Ez97jq4uAMLSKWmttY+la4Vp8x0y8lZAbWwk1OsS5hXTmpXYiETfbUSdSkfu42QQ4P+UyFSGyTBKqfUUfc6isVabZ96lvdctlvxQaEoiMMLLO4uq63j0xAmWImN0hKqCjeaVlpteFuMXMpwJfARFkJtcai7wBCoIx7iYiG8R/yuhZ9Bc6dihm2wuKOZgeE0ba8V2+GaGNkHxOzMRIAxR5G43fRr7Sh2kr24tNuPK6GaV/YWJ2+Y17EP3h//yd03Tct542mFONCmhqbuuvf76eJxvvw4+7T8/N4NF1Re5pEbGBbDOBqe98j16JxHzrjjQmMkvzGG+yp/6Isoiv4b46+NwU3anbPX1g7/h754cSboZh52TblBakuHTfv/DhfY4XFxegptlX51oo7Y/juwmcoPhQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0d9b859ac319c2102c03deee050131c1"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=0d9b859ac319c2102c03deee050131c1^sys_idNOT INc59bc59ac319c2102c03deee05013104"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=549aeebd-e19a-42bc-af07-37a5680cb9cf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_task</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>last_sc_task</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>last SC Task</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="RITM Update">0d9b859ac319c2102c03deee050131c1</model>
+        <model_id>0d9b859ac319c2102c03deee050131c1</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_0d9b859ac319c2102c03deee050131c1</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_task">sc_task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-03 13:02:43</sys_created_on>
+        <sys_id>c59bc59ac319c2102c03deee05013104</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-16 07:39:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_0d9b859ac319c2102c03deee050131c1^sys_idNOT IN8d9b859ac319c2102c03deee050131fb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ritm</element>
+        <help/>
+        <hint/>
+        <label>RITM</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0d9b859ac319c2102c03deee050131c1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-03 13:02:43</sys_created_on>
+        <sys_id>8d9b859ac319c2102c03deee050131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Autobahn Incident" source="92fe5b6fc33275102c03deee05013166">92fe5b6fc33275102c03deee05013166</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Incident">92fe5b6fc33275102c03deee05013166</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-03 13:02:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0d9b859ac319c2102c03deee050131c1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_0d9b859ac319c2102c03deee050131c1"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0d9b859ac319c2102c03deee050131c1"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>ab6945d6c319c2102c03deee050131fc</sys_id>
+        <latest_snapshot>0d9b859ac319c2102c03deee050131c1</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ab6945d6c319c2102c03deee050131fc"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ab6945d6c319c2102c03deee050131fc^sys_idNOT IN699bc59ac319c2102c03deee050131a5"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@a1881e4</plan>
+        <plan_id display_value="RITM Update">ab6945d6c319c2102c03deee050131fc</plan_id>
+        <snapshot>0d9b859ac319c2102c03deee050131c1</snapshot>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-03 13:02:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>699bc59ac319c2102c03deee050131a5</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-01-31 07:49:25</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>
