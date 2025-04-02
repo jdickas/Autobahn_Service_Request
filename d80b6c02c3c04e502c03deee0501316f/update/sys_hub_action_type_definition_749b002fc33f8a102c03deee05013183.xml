@@ -30,15 +30,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>749b002fc33f8a102c03deee05013183</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>getRITMvariables</sys_name>
         <sys_overrides/>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_749b002fc33f8a102c03deee05013183</sys_update_name>
-        <sys_updated_by>J100246</sys_updated_by>
-        <sys_updated_on>2025-01-31 07:38:36</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:11:26</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -165,7 +165,6 @@ output;&#13;
     <sys_hub_step_ext_input action="delete_multiple" query="model=54ac80efc33f8a102c03deee050131e0"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=54ac80efc33f8a102c03deee050131e0"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=54ac80efc33f8a102c03deee050131e0"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_54ac80efc33f8a102c03deee050131e0"/>
     <sys_hub_action_input action="delete_multiple" query="model=749b002fc33f8a102c03deee05013183^sys_idNOT INc6eb80afc33f8a102c03deee05013105"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -548,7 +547,6 @@ output;&#13;
         <sys_updated_on>2024-08-09 12:13:54</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=deeb80afc33f8a102c03deee0501311d"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_749b002fc33f8a102c03deee05013183^sys_idNOT IN42eb80afc33f8a102c03deee0501310b"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>ritm</element>
         <help/>
@@ -562,18 +560,17 @@ output;&#13;
         <sys_created_on>2024-08-09 12:13:54</sys_created_on>
         <sys_id>42eb80afc33f8a102c03deee0501310b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>RITM</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_749b002fc33f8a102c03deee05013183_ritm_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-08-09 12:13:54</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_749b002fc33f8a102c03deee05013183"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_749b002fc33f8a102c03deee05013183^sys_idNOT IN0aeb80afc33f8a102c03deee05013118,1f3e84a3c37f8a102c03deee05013125,c2eb80afc33f8a102c03deee05013112"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
         <help/>
@@ -587,11 +584,11 @@ output;&#13;
         <sys_created_on>2024-08-09 12:13:54</sys_created_on>
         <sys_id>0aeb80afc33f8a102c03deee05013118</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_749b002fc33f8a102c03deee05013183___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-08-09 12:13:54</sys_updated_on>
         <url/>
@@ -610,11 +607,11 @@ output;&#13;
         <sys_created_on>2024-08-09 12:24:05</sys_created_on>
         <sys_id>1f3e84a3c37f8a102c03deee05013125</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>output</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_749b002fc33f8a102c03deee05013183_output_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-08-09 12:24:05</sys_updated_on>
         <url/>
@@ -633,11 +630,11 @@ output;&#13;
         <sys_created_on>2024-08-09 12:13:54</sys_created_on>
         <sys_id>c2eb80afc33f8a102c03deee05013112</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_749b002fc33f8a102c03deee05013183___action_status___en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-08-09 12:13:54</sys_updated_on>
         <url/>
@@ -822,7 +819,6 @@ output;&#13;
     <sys_hub_step_ext_input action="delete_multiple" query="model=f2ac08efc33f8a102c03deee05013110"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=f2ac08efc33f8a102c03deee05013110"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=f2ac08efc33f8a102c03deee05013110"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_f2ac08efc33f8a102c03deee05013110"/>
     <sys_hub_action_input action="delete_multiple" query="model=b6ac08efc33f8a102c03deee05013104^sys_idNOT INfeac08efc33f8a102c03deee05013108"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1205,7 +1201,6 @@ output;&#13;
         <sys_updated_on>2024-08-09 12:17:14</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=0bac08efc33f8a102c03deee05013127"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_b6ac08efc33f8a102c03deee05013104^sys_idNOT IN72ac08efc33f8a102c03deee0501310e"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>ritm</element>
         <help/>
@@ -1219,18 +1214,17 @@ output;&#13;
         <sys_created_on>2024-08-09 12:17:14</sys_created_on>
         <sys_id>72ac08efc33f8a102c03deee0501310e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>RITM</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_b6ac08efc33f8a102c03deee05013104_ritm_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-08-09 12:17:14</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_b6ac08efc33f8a102c03deee05013104"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_b6ac08efc33f8a102c03deee05013104^sys_idNOT IN43ac08efc33f8a102c03deee0501311d,4fac08efc33f8a102c03deee05013122,cb4ec4a3c37f8a102c03deee050131ba"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__action_status__</element>
         <help/>
@@ -1244,11 +1238,11 @@ output;&#13;
         <sys_created_on>2024-08-09 12:17:14</sys_created_on>
         <sys_id>43ac08efc33f8a102c03deee0501311d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_b6ac08efc33f8a102c03deee05013104___action_status___en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-08-09 12:17:14</sys_updated_on>
         <url/>
@@ -1267,11 +1261,11 @@ output;&#13;
         <sys_created_on>2024-08-09 12:17:14</sys_created_on>
         <sys_id>4fac08efc33f8a102c03deee05013122</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_b6ac08efc33f8a102c03deee05013104___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-08-09 12:17:14</sys_updated_on>
         <url/>
@@ -1290,11 +1284,11 @@ output;&#13;
         <sys_created_on>2024-08-09 12:24:21</sys_created_on>
         <sys_id>cb4ec4a3c37f8a102c03deee050131ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>output</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_b6ac08efc33f8a102c03deee05013104_output_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-08-09 12:24:21</sys_updated_on>
         <url/>

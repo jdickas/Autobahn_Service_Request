@@ -36,15 +36,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>57280d91c3109e504de0d0cf05013161</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Autobahn Catalog item AD Appr P</sys_name>
         <sys_overrides/>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
         <sys_update_name>sys_hub_flow_57280d91c3109e504de0d0cf05013161</sys_update_name>
-        <sys_updated_by>J100246</sys_updated_by>
-        <sys_updated_on>2025-01-31 07:55:18</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:11:38</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -54,6 +54,7 @@
         <active>true</active>
         <catalog_item/>
         <name/>
+        <published_version/>
         <run_flow_in/>
         <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
         <sys_created_by>J100246</sys_created_by>
@@ -66,6 +67,7 @@
         <sys_scope/>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-08-29 13:33:26</sys_updated_on>
+        <trigger_definition/>
     </sys_flow_catalog_trigger>
     <sys_trigger_runner_mapping action="delete_multiple" query="identifier=57280d91c3109e504de0d0cf05013161"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=57280d91c3109e504de0d0cf05013161^sys_idNOT IN73284d91c3109e504de0d0cf0501316a,73284d91c3109e504de0d0cf0501316b,7b284d91c3109e504de0d0cf0501316a,7f284d91c3109e504de0d0cf0501316a,f3284d91c3109e504de0d0cf0501316b,f7284d91c3109e504de0d0cf0501316a,fb284d91c3109e504de0d0cf0501316a,ff284d91c3109e504de0d0cf0501316a"/>
@@ -443,6 +445,7 @@
         <display_text/>
         <flow display_value="Autobahn Catalog item AD Appr P">57280d91c3109e504de0d0cf05013161</flow>
         <name>Service Catalog</name>
+        <published_version/>
         <remote_sys_id/>
         <sys_created_by>J100246</sys_created_by>
         <sys_created_on>2025-01-31 07:55:08</sys_created_on>
@@ -1594,7 +1597,6 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_variable>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_57280d91c3109e504de0d0cf05013161^sys_idNOT IN6b280d91c3109e504de0d0cf05013177,e7280d91c3109e504de0d0cf05013172"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>table_name</element>
         <help/>
@@ -1608,11 +1610,11 @@
         <sys_created_on>2024-08-27 13:22:17</sys_created_on>
         <sys_id>6b280d91c3109e504de0d0cf05013177</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_57280d91c3109e504de0d0cf05013161_table_name_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-08-27 13:22:17</sys_updated_on>
         <url/>
@@ -1631,18 +1633,17 @@
         <sys_created_on>2024-08-27 13:22:17</sys_created_on>
         <sys_id>e7280d91c3109e504de0d0cf05013172</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Request Item</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_57280d91c3109e504de0d0cf05013161_request_item_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-08-27 13:22:17</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_57280d91c3109e504de0d0cf05013161"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_57280d91c3109e504de0d0cf05013161"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_57280d91c3109e504de0d0cf05013161"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2064,6 +2065,7 @@
         <display_text/>
         <flow display_value="Autobahn Catalog item AD Appr P">a83b8d95c3109e504de0d0cf05013129</flow>
         <name>Service Catalog</name>
+        <published_version/>
         <remote_sys_id/>
         <sys_created_by>J100246</sys_created_by>
         <sys_created_on>2025-01-31 07:55:13</sys_created_on>
@@ -3215,7 +3217,6 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_variable>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a83b8d95c3109e504de0d0cf05013129^sys_idNOT IN243b8d95c3109e504de0d0cf05013148,a83b8d95c3109e504de0d0cf05013140"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>request_item</element>
         <help/>
@@ -3229,11 +3230,11 @@
         <sys_created_on>2024-08-27 13:35:28</sys_created_on>
         <sys_id>243b8d95c3109e504de0d0cf05013148</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Request Item</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_a83b8d95c3109e504de0d0cf05013129_request_item_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-08-27 13:35:28</sys_updated_on>
         <url/>
@@ -3252,18 +3253,17 @@
         <sys_created_on>2024-08-27 13:35:28</sys_created_on>
         <sys_id>a83b8d95c3109e504de0d0cf05013140</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_a83b8d95c3109e504de0d0cf05013129_table_name_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-08-27 13:35:28</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a83b8d95c3109e504de0d0cf05013129"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_a83b8d95c3109e504de0d0cf05013129"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a83b8d95c3109e504de0d0cf05013129"/>
     <sys_hub_flow action="UPDATE">
         <sys_id>57280d91c3109e504de0d0cf05013161</sys_id>

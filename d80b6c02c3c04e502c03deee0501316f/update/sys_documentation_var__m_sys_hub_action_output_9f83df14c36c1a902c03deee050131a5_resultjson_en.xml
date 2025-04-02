@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="resultjson" label="Result JSON" language="en" table="var__m_sys_hub_action_output_9f83df14c36c1a902c03deee050131a5">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>resultjson</element>
+            <help/>
+            <hint/>
+            <label>Result JSON</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_9f83df14c36c1a902c03deee050131a5</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-09-06 07:13:00</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Result JSON</sys_name>
+            <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_output_9f83df14c36c1a902c03deee050131a5_resultjson_en</sys_update_name>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-09-06 07:13:00</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -31,15 +31,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>032c5008c33412504de0d0cf05013127</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>MRVS Convert to Array HASVA</sys_name>
         <sys_overrides/>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_032c5008c33412504de0d0cf05013127</sys_update_name>
-        <sys_updated_by>J100246</sys_updated_by>
-        <sys_updated_on>2025-01-31 07:34:09</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:11:18</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -182,18 +182,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=cb2c5008c33412504de0d0cf0501313e"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>cb2c5008c33412504de0d0cf0501313e</id>
-        <sys_created_by>J100246</sys_created_by>
-        <sys_created_on>2024-09-17 09:29:01</sys_created_on>
-        <sys_id>c72c5008c33412504de0d0cf0501314d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>J100246</sys_updated_by>
-        <sys_updated_on>2024-09-17 09:29:01</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>mrvsValues</field>
         <id>cb2c5008c33412504de0d0cf0501313e</id>
         <sys_created_by>J100246</sys_created_by>
@@ -204,18 +192,6 @@
         <sys_updated_on>2024-09-17 09:29:01</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_cb2c5008c33412504de0d0cf0501313e</table>
         <value>{{action.mrvs_input}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>cb2c5008c33412504de0d0cf0501313e</id>
-        <sys_created_by>J100246</sys_created_by>
-        <sys_created_on>2024-09-17 09:29:01</sys_created_on>
-        <sys_id>8b2c5008c33412504de0d0cf0501314d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>J100246</sys_updated_by>
-        <sys_updated_on>2024-09-17 09:29:01</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_cb2c5008c33412504de0d0cf0501313e^id=cb2c5008c33412504de0d0cf0501313e"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=cb2c5008c33412504de0d0cf0501313e"/>
@@ -412,7 +388,6 @@
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_input_scripts action="delete_multiple" query="instance=cb2c5008c33412504de0d0cf0501313e"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_cb2c5008c33412504de0d0cf0501313e^sys_idNOT IN432c5008c33412504de0d0cf0501314a"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>apprarr</element>
         <help/>
@@ -426,11 +401,11 @@
         <sys_created_on>2024-09-17 09:29:01</sys_created_on>
         <sys_id>432c5008c33412504de0d0cf0501314a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Approver Array</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_cb2c5008c33412504de0d0cf0501313e_apprarr_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-09-17 09:29:01</sys_updated_on>
         <url/>
@@ -841,7 +816,6 @@
         <sys_updated_on>2024-09-17 09:29:01</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=8f2c5008c33412504de0d0cf05013166"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_032c5008c33412504de0d0cf05013127^sys_idNOT IN872c5008c33412504de0d0cf05013130"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>mrvs_input</element>
         <help/>
@@ -855,18 +829,17 @@
         <sys_created_on>2024-09-17 09:29:01</sys_created_on>
         <sys_id>872c5008c33412504de0d0cf05013130</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>MRVS input</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_032c5008c33412504de0d0cf05013127_mrvs_input_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-09-17 09:29:01</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_032c5008c33412504de0d0cf05013127"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_032c5008c33412504de0d0cf05013127^sys_idNOT IN872c5008c33412504de0d0cf05013160,8b2c5008c33412504de0d0cf0501315a,cb2c5008c33412504de0d0cf05013156"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
         <help/>
@@ -880,11 +853,11 @@
         <sys_created_on>2024-09-17 09:29:01</sys_created_on>
         <sys_id>872c5008c33412504de0d0cf05013160</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_032c5008c33412504de0d0cf05013127___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-09-17 09:29:01</sys_updated_on>
         <url/>
@@ -903,11 +876,11 @@
         <sys_created_on>2024-09-17 09:29:01</sys_created_on>
         <sys_id>8b2c5008c33412504de0d0cf0501315a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_032c5008c33412504de0d0cf05013127___action_status___en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-09-17 09:29:01</sys_updated_on>
         <url/>
@@ -926,11 +899,11 @@
         <sys_created_on>2024-09-17 09:29:01</sys_created_on>
         <sys_id>cb2c5008c33412504de0d0cf05013156</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>All SysIDs</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_032c5008c33412504de0d0cf05013127_allsysids_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-09-17 09:29:01</sys_updated_on>
         <url/>
@@ -1132,18 +1105,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=4edc9c08c33412504de0d0cf050131a5"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>4edc9c08c33412504de0d0cf050131a5</id>
-        <sys_created_by>J100246</sys_created_by>
-        <sys_created_on>2024-09-17 09:31:57</sys_created_on>
-        <sys_id>4adc9c08c33412504de0d0cf050131b4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>J100246</sys_updated_by>
-        <sys_updated_on>2024-09-17 09:31:57</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>mrvsValues</field>
         <id>4edc9c08c33412504de0d0cf050131a5</id>
         <sys_created_by>J100246</sys_created_by>
@@ -1154,18 +1115,6 @@
         <sys_updated_on>2024-09-17 09:31:57</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_4edc9c08c33412504de0d0cf050131a5</table>
         <value>{{action.mrvs_input}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>4edc9c08c33412504de0d0cf050131a5</id>
-        <sys_created_by>J100246</sys_created_by>
-        <sys_created_on>2024-09-17 09:31:57</sys_created_on>
-        <sys_id>0edc9c08c33412504de0d0cf050131b4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>J100246</sys_updated_by>
-        <sys_updated_on>2024-09-17 09:31:57</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_4edc9c08c33412504de0d0cf050131a5^id=4edc9c08c33412504de0d0cf050131a5"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=4edc9c08c33412504de0d0cf050131a5"/>
@@ -1362,7 +1311,6 @@
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_input_scripts action="delete_multiple" query="instance=4edc9c08c33412504de0d0cf050131a5"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_4edc9c08c33412504de0d0cf050131a5^sys_idNOT INc2dc9c08c33412504de0d0cf050131b1"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>apprarr</element>
         <help/>
@@ -1376,11 +1324,11 @@
         <sys_created_on>2024-09-17 09:31:57</sys_created_on>
         <sys_id>c2dc9c08c33412504de0d0cf050131b1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Approver Array</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_4edc9c08c33412504de0d0cf050131a5_apprarr_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-09-17 09:31:57</sys_updated_on>
         <url/>
@@ -1768,7 +1716,6 @@
         <sys_updated_on>2024-09-17 09:31:57</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=02dc9c08c33412504de0d0cf050131cd"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_02dc9c08c33412504de0d0cf0501319c^sys_idNOT IN4edc9c08c33412504de0d0cf050131a3"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>mrvs_input</element>
         <help/>
@@ -1782,18 +1729,17 @@
         <sys_created_on>2024-09-17 09:31:57</sys_created_on>
         <sys_id>4edc9c08c33412504de0d0cf050131a3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>MRVS input</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_02dc9c08c33412504de0d0cf0501319c_mrvs_input_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-09-17 09:31:57</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_02dc9c08c33412504de0d0cf0501319c"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_02dc9c08c33412504de0d0cf0501319c^sys_idNOT IN02dc9c08c33412504de0d0cf050131c7,06dc9c08c33412504de0d0cf050131c1,46dc9c08c33412504de0d0cf050131bd"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
         <help/>
@@ -1807,11 +1753,11 @@
         <sys_created_on>2024-09-17 09:31:57</sys_created_on>
         <sys_id>02dc9c08c33412504de0d0cf050131c7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_02dc9c08c33412504de0d0cf0501319c___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-09-17 09:31:57</sys_updated_on>
         <url/>
@@ -1830,11 +1776,11 @@
         <sys_created_on>2024-09-17 09:31:57</sys_created_on>
         <sys_id>06dc9c08c33412504de0d0cf050131c1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_02dc9c08c33412504de0d0cf0501319c___action_status___en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-09-17 09:31:57</sys_updated_on>
         <url/>
@@ -1853,11 +1799,11 @@
         <sys_created_on>2024-09-17 09:31:57</sys_created_on>
         <sys_id>46dc9c08c33412504de0d0cf050131bd</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>All SysIDs</sys_name>
         <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_02dc9c08c33412504de0d0cf0501319c_allsysids_en</sys_update_name>
         <sys_updated_by>J100246</sys_updated_by>
         <sys_updated_on>2024-09-17 09:31:57</sys_updated_on>
         <url/>
