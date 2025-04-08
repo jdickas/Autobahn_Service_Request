@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sc_task">state=2^EQ<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>in Progress</label>
+        <name>Catalog Task Work in Progress</name>
+        <order>20</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-02-15 07:39:58</sys_created_on>
+        <sys_id>9fd4fcf2c354ce104de0d0cf05013170</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Catalog Task Work in Progress</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_process_flow_9fd4fcf2c354ce104de0d0cf05013170</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-02-15 15:18:48</sys_updated_on>
+        <table>sc_task</table>
+    </sys_process_flow>
+</record_update>

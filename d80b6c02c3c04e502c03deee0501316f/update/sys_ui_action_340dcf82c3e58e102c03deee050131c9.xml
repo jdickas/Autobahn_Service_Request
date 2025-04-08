@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>state_model_move_to_canceled</action_name>
+        <active>false</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>(current.state == '2' || current.state == '-5' || current.state == '111' ) &amp;&amp; current.approval == 'requested'</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Cancel</name>
+        <onclick>setChangeCancelState();</onclick>
+        <order>100</order>
+        <script><![CDATA[var changeConfirmCancelDialog;
+
+function setChangeCancelState() {
+    g_form.setValue("state", "8");
+}
+
+if (typeof window == 'undefined')
+    setRedirect();
+
+function setRedirect() {
+    var myLog = new Logger(Logger.DEF, 'UI Action', 'RITM Cancel');
+    ritmsysId = current.sys_id;
+    new global.ServiceRequestUtil().closeCatalogTasks(ritmsysId);
+    new global.ServiceRequestUtil().closeApprovals(ritmsysId);
+    new global.ServiceRequestUtil().closeGroupApprovals(ritmsysId);
+    myLog.debug('RITM = ' + ritmsysId + ' NUMBER ' + current.number + ' state ' + current.state);
+
+    myLog.debug('closed_rejected');
+    var valueApproval = 'rejected';
+    var valueReqState = 'closed_cancelled';
+
+
+    if (JSUtil.notNil(valueApproval) && JSUtil.notNil(valueReqState)) {
+        myLog.debug('closed_rejected notNil');
+        new global.ServiceRequestUtil().closeServiceRequests(ritmsysId, valueApproval, valueReqState);
+        myLog.debug('closed_rejected_done');
+    }
+
+    current.approval = 'rejected';
+    current.stage = 'req_cancelled';
+    current.state = '9';
+    current.update();
+    action.setRedirectURL(current);
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-15 14:05:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>340dcf82c3e58e102c03deee050131c9</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Cancel</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_ui_action_340dcf82c3e58e102c03deee050131c9</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-17 11:26:16</sys_updated_on>
+        <table>sc_req_item</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

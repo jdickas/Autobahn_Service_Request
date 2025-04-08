@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_pending_timer</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Autobahn Date in the past 2</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    //Type appropriate comment here, and begin script below
+
+    // Function to convert a date to a specific timezone
+    function convertToTimezone(date, timezoneOffset) {
+        var utcDate = new Date(date.getTime() + date.getTimezoneOffset() * 60000);
+        return new Date(utcDate.getTime() + timezoneOffset * 60000);
+    }
+
+    // Get the date field on the form
+    var dateField = g_form.getControl('u_pending_timer');
+    //g_form.addInfoMessage('Never in the past 1: ' + dateField.value);
+
+    var eventDate = new Date();
+    //var localDate = getDateFromFormat(eventDate, g_user_date_format);
+    //g_form.addInfoMessage('Aktuelles Datum (MEZ): ' + eventDate);
+
+    // Get the selected date value
+    //var selectedDate = dateField.value;
+    var selectedDate = getDateFromFormat(dateField.value, g_user_date_time_format);
+    //g_form.addInfoMessage('eingegebenes Datum (Number): ' + selectedDate);
+    var selectedDateFormat = new Date(selectedDate);
+    //g_form.addInfoMessage('eingegebenes Datum (MEZ) ' + selectedDateFormat);
+
+    // Get the current date in the user's timezone
+    //var userTimezoneOffset = new Date().getTimezoneOffset();
+    var userTimezoneOffset = selectedDateFormat.getTimezoneOffset();
+    var currentDate = convertToTimezone(new Date(), userTimezoneOffset);
+
+
+    //g_form.addInfoMessage('Aktuelles Datum (GMT): ' + currentDate + ' Timezone Offset: ' + userTimezoneOffset);
+
+    // Compare the selected date with the current date
+    if (convertToTimezone(new Date(selectedDate), userTimezoneOffset) < currentDate) {
+        // If selected date is in the past, display an error message
+        g_form.showFieldMsg('u_pending_timer', 'ausgewähltes Datum muss in der Zukunft liegen!', 'error');
+        // Clear the selected date
+        dateField.value = '';
+    } else {
+        // If selected date is valid, clear any previous error message
+        g_form.hideFieldMsg('u_pending_timer');
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-11-13 12:08:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5f43eedec33d52502c03deee050131d7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Autobahn Date in the past 2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_script_client_5f43eedec33d52502c03deee050131d7</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-11-13 12:11:00</sys_updated_on>
+        <table>sc_task</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

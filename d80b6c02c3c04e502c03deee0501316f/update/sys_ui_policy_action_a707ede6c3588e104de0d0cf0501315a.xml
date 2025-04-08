@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>state</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>false</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-02-14 16:38:47</sys_created_on>
+        <sys_id>a707ede6c3588e104de0d0cf0501315a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>state</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_ui_policy_action_a707ede6c3588e104de0d0cf0501315a</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-02-14 16:38:47</sys_updated_on>
+        <table>sc_task</table>
+        <ui_policy display_value="set RO field State">99c6a9e6c3588e104de0d0cf050131da</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=a707ede6c3588e104de0d0cf0501315a"/>
+</record_update>

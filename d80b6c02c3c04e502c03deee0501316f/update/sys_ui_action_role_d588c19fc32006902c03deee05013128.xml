@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>A100410</sys_created_by>
+        <sys_created_on>2024-02-29 08:46:29</sys_created_on>
+        <sys_id>d588c19fc32006902c03deee05013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.admin</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_ui_action display_value="Restart Approval">de08c99fc32006902c03deee050131c0</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_d588c19fc32006902c03deee05013128</sys_update_name>
+        <sys_updated_by>A100410</sys_updated_by>
+        <sys_updated_on>2024-02-29 08:46:29</sys_updated_on>
+        <sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role>
+    </sys_ui_action_role>
+</record_update>

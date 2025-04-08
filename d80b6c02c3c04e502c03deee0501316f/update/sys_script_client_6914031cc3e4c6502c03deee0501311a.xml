@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>state</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages>Reason for cancellation</messages>
+        <name>Autobahn Show Cancel Reason modal</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '' || g_form.isLiveUpdating())
+		return;
+
+	var intOldValue = parseInt(oldValue, 10);
+	var intNewValue = parseInt(newValue, 10);
+
+	if (intNewValue !== 8 || (intOldValue === intNewValue && intOldValue === 8))
+		return;
+
+	var workNotesComplete = false;
+
+	var dialog = new GlideModal('autobahn_confirm_reason', false, 580, 250);
+	dialog.setTitle(new GwtMessage().getMessage('Reason for cancellation'));
+	dialog.setPreference('focusTrap', true);
+	dialog.setPreference('onPromptComplete', onPromptComplete);
+	dialog.setPreference('onPromptCancel', onPromptCancel);
+	dialog.on('closeconfirm', onPromptCancel);
+	dialog.setPreference('buttonLabelComplete', new GwtMessage().getMessage('OK'));
+	dialog.setPreference('buttonLabelCancel', new GwtMessage().getMessage('Cancel'));
+	dialog.render();
+
+	function onPromptComplete(notes) {
+		workNotesComplete = true;
+		g_form.setValue("comments", notes);
+		gsftSubmit(null, g_form.getFormElement(), "state_model_move_to_canceled");
+	}
+
+	function onPromptCancel() {
+		if (workNotesComplete)
+			return;
+
+		g_form.setValue("state", oldValue);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>A100410</sys_created_by>
+        <sys_created_on>2024-02-20 09:54:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6914031cc3e4c6502c03deee0501311a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Autobahn Show Cancel Reason modal</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_script_client_6914031cc3e4c6502c03deee0501311a</sys_update_name>
+        <sys_updated_by>A100410</sys_updated_by>
+        <sys_updated_on>2024-02-26 12:46:01</sys_updated_on>
+        <table>sc_req_item</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

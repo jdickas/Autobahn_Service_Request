@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_customer_specific_data_1" table="u_cmdb_ci_managed_folder" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_customer_specific_data_1</element>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:42</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_customer_specific_data_1</sys_name>
+            <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+            <sys_update_name>sys_choice_u_cmdb_ci_managed_folder_u_customer_specific_data_1</sys_update_name>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-07 12:20:42</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NL-06_RL</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:12:11</sys_updated_on>
+            <value>NL-06_RL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>BBX</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:13:38</sys_updated_on>
+            <value>BBX</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Gesamtbetriebsrat</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:12:11</sys_updated_on>
+            <value>Gesamtbetriebsrat</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>L-03_NO</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:13:42</sys_updated_on>
+            <value>L-03_NO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NL-01_N</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:12:11</sys_updated_on>
+            <value>NL-01_N</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NL-02_NW</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:12:11</sys_updated_on>
+            <value>NL-02_NW</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NL-03_NO</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>60</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:12:11</sys_updated_on>
+            <value>NL-03_NO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NL-04_O</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>70</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:12:11</sys_updated_on>
+            <value>NL-04_O</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NL-05_W</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>80</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:12:11</sys_updated_on>
+            <value>NL-05_W</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NL-07_WF</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:12:12</sys_updated_on>
+            <value>NL-07_WF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NL-08_SW</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>110</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:12:12</sys_updated_on>
+            <value>NL-08_SW</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NL-09_NB</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>120</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:12:12</sys_updated_on>
+            <value>NL-09_NB</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NL-10_SB</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>130</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:12:12</sys_updated_on>
+            <value>NL-10_SB</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_customer_specific_data_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Zentrale</label>
+            <language>en</language>
+            <name>u_cmdb_ci_managed_folder</name>
+            <sequence>140</sequence>
+            <synonyms/>
+            <sys_created_by>J100246</sys_created_by>
+            <sys_created_on>2024-08-07 12:20:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>J100246</sys_updated_by>
+            <sys_updated_on>2024-08-30 12:12:40</sys_updated_on>
+            <value>Zentrale</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

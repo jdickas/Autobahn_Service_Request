@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Laufwerk O: ändern">6935303ec3bb86102c03deee05013193</catalog_item>
+        <catalog_variable>IO:27960af6c3f3c6102c03deee050131d6</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>false</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-08-08 16:22:26</sys_created_on>
+        <sys_id>942b7f4fc3b382104de0d0cf05013135</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>slb_sub_organization</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_942b7f4fc3b382104de0d0cf05013135</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-04-03 13:09:00</sys_updated_on>
+        <table/>
+        <ui_policy display_value="show further fields if yn_modify_folder_name is Ja and org is not none">0e1b774fc3b382104de0d0cf0501311e</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>slb_sub_organization</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=942b7f4fc3b382104de0d0cf05013135"/>
+</record_update>

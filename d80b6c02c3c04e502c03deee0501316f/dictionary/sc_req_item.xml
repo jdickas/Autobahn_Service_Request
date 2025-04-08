@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="global_search_config_handler=RequestItemSearchConfig,hasWorkflow=true" audit="true" create_roles="catalog_admin" db_object_id="f14195fe0da112104f349799ccc97349" extends="task" label="Requested Item" max_length="40" name="sc_req_item" text_index="true" type="collection">
+        <element label="Sub-SubServiceName" max_length="40" name="u_sub_subservicename" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Category" max_length="40" name="u_category" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Subcategory 2" max_length="40" name="u_subcategory_2" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Neu Referenz" max_length="32" name="u_reference_1" reference="cmdb_multisource_deny_class" type="reference"/>
+        <element label="SubServiceName" max_length="40" name="u_subservicename" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Subcategory" max_length="40" name="u_subcategory" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Service Owner" max_length="32" name="u_service_owner" reference="sys_user" type="reference"/>
+    </element>
+</database>

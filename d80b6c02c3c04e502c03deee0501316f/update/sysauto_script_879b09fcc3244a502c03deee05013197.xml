@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition><![CDATA[var answer = false;
+var SCTArray = [];
+var justNow = new GlideDateTime();
+var myLog = new Logger(Logger.DEF, 'SchedScriptEx', 'SCTask On-Hold Pending Timer Exceeded');
+//var nextDueDate = new GlideDateTime();
+//nextDueDate.addDaysUTC(3);
+//nextDueDate.addSeconds(180);
+
+
+var grSCTOnHold = new GlideRecord('sc_task');
+grSCTOnHold.addEncodedQuery('active=true^state=111');
+grSCTOnHold.query();
+
+while (grSCTOnHold.next()) {
+    //myLog.debug('SCT ' + grSCTOnHold.number);
+    SCTArray.push({
+        number: grSCTOnHold.getValue('number'),
+		onHold_reason: grSCTOnHold.getValue('u_on_hold_reason'),
+        due_date: grSCTOnHold.getValue('u_pending_timer'),
+        attention_flag: grSCTOnHold.getValue('u_attention_required')
+    });
+    answer = true;
+}
+
+answer;]]></condition>
+        <conditional>true</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <max_drift/>
+        <name>SCTask On-Hold Pending Timer Exceeded</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as/>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 00:01:00</run_period>
+        <run_start>2024-02-21 14:24:52</run_start>
+        <run_time>1969-12-31 23:01:00</run_time>
+        <run_type>periodically</run_type>
+        <script><![CDATA[if (global.JSUtil.notNil(SCTArray[0].number)) {
+
+    for (var j = 0; j < SCTArray.length; j++) {
+        //myLog.debug(' Start Execution ' + SCTArray[j].number + ' Number = ' + SCTArray[j].number + ' | due_date: ' + SCTArray[j].due_date + ' | attention flag: ' + SCTArray[j].attention_flag + ' user: ' + gs.getUserName());
+        
+        if (SCTArray[j].due_date < justNow && SCTArray[j].due_date != '') {
+
+            //myLog.debug(' ' + SCTArray[j].number + ' Number = SCT to set attention_flag: ' + SCTArray[j].number + ' | on Hold Reason: '+ SCTArray[j].onHold_reason);
+            var SCTToUpdate = new GlideRecord('sc_task');
+            SCTToUpdate.addEncodedQuery('numberSTARTSWITH' + SCTArray[j].number);
+            SCTToUpdate.query();
+
+            if (SCTToUpdate.next()) {
+                SCTToUpdate.u_pending_timer = '';
+				SCTToUpdate.u_on_hold_reason = '';
+                SCTToUpdate.u_attention_required = true;
+				SCTToUpdate.state = global.Constants_Service_Requests.SC_Task_WORK_IN_PROGRESS;
+				SCTToUpdate.work_notes = gs.getMessage('Attention Required. Pending Timer exceeded');
+                SCTToUpdate.update();
+				myLog.debug(' ' + SCTArray[j].number + ' Attention Flag Set');
+
+            }
+
+        }
+	}
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-02-21 14:26:32</sys_created_on>
+        <sys_id>879b09fcc3244a502c03deee05013197</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>SCTask On-Hold Pending Timer Exceeded</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sysauto_script_879b09fcc3244a502c03deee05013197</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-08-02 06:07:17</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

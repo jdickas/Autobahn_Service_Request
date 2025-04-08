@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cxs_ui_action_config">
+    <cxs_ui_action_config action="INSERT_OR_UPDATE">
+        <action_condition/>
+        <action_label>This helped</action_label>
+        <action_undo_label/>
+        <action_value>This helped</action_value>
+        <active>true</active>
+        <advanced_visibility>false</advanced_visibility>
+        <attach_note_field>comments</attach_note_field>
+        <attachment_type/>
+        <badge_label>Helpful</badge_label>
+        <current_action_condition/>
+        <current_table/>
+        <order>400</order>
+        <rest_api/>
+        <search_res_config/>
+        <search_resource display_value="">com.snc.contextual_search.search_resource.ServiceCatalogSearchResource</search_resource>
+        <search_ui_action display_value="This helped">31173286872a0300692cbba826cb0be1</search_ui_action>
+        <search_ui_config display_value="Katalogaufgabe [sc_task]">0599358bc3dc42502c03deee05013106</search_ui_config>
+        <show_on_new>true</show_on_new>
+        <sys_class_name>cxs_ui_action_config</sys_class_name>
+        <sys_created_by>P100126</sys_created_by>
+        <sys_created_on>2024-02-16 07:18:47</sys_created_on>
+        <sys_id>c12abd8bc3dc42502c03deee050131ed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Dies war hilfreich.</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>cxs_ui_action_config_c12abd8bc3dc42502c03deee050131ed</sys_update_name>
+        <sys_updated_by>P100126</sys_updated_by>
+        <sys_updated_on>2024-02-20 14:56:51</sys_updated_on>
+        <table/>
+        <trend_recommendation/>
+        <ui_action_visibility_script><![CDATA[/**
+* Description: scripting condition for Search UI Action's visibility.
+* Variables available:
+* 	current (GlideRecord): GlideRecord object of form record.
+* 	resource (GlideRecord): GlideRecord object of search result record.
+* Variable to set:
+* 	visible (boolean): Script writer needs to set this variable to true/false to determine whether to show/hide this UI action.
+* Example:
+* 	visible = current.getValue('parent_incident') !== resource.getUniqueValue();
+*/
+]]></ui_action_visibility_script>
+        <use_custom_field_for_attach>false</use_custom_field_for_attach>
+    </cxs_ui_action_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=c12abd8bc3dc42502c03deee050131ed"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>c12abd8bc3dc42502c03deee050131ed</documentkey>
+        <fieldname>action_label</fieldname>
+        <language>de</language>
+        <sys_created_by>P100126</sys_created_by>
+        <sys_created_on>2024-02-20 14:56:51</sys_created_on>
+        <sys_id>4a59c4a4c32c46504de0d0cf05013164</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>P100126</sys_updated_by>
+        <sys_updated_on>2024-02-20 14:56:51</sys_updated_on>
+        <tablename>cxs_ui_action_config</tablename>
+        <value>Dies war hilfreich.</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>c12abd8bc3dc42502c03deee050131ed</documentkey>
+        <fieldname>action_undo_label</fieldname>
+        <language>de</language>
+        <sys_created_by>P100126</sys_created_by>
+        <sys_created_on>2024-02-20 14:56:51</sys_created_on>
+        <sys_id>8a5940e4c32c46504de0d0cf050131a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>P100126</sys_updated_by>
+        <sys_updated_on>2024-02-20 14:56:51</sys_updated_on>
+        <tablename>cxs_ui_action_config</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>c12abd8bc3dc42502c03deee050131ed</documentkey>
+        <fieldname>badge_label</fieldname>
+        <language>de</language>
+        <sys_created_by>P100126</sys_created_by>
+        <sys_created_on>2024-02-20 14:56:51</sys_created_on>
+        <sys_id>c25940e4c32c46504de0d0cf050131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>P100126</sys_updated_by>
+        <sys_updated_on>2024-02-20 14:56:51</sys_updated_on>
+        <tablename>cxs_ui_action_config</tablename>
+        <value>Helpful</value>
+    </sys_translated_text>
+</record_update>

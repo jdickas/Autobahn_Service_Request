@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_sub_subservicename" label="Detail 2" language="de" table="sc_req_item">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_sub_subservicename</element>
+            <help/>
+            <hint/>
+            <label>Detail 2</label>
+            <language>de</language>
+            <name>sc_req_item</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>T100516</sys_created_by>
+            <sys_created_on>2024-07-02 11:51:16</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Detail 2</sys_name>
+            <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+            <sys_update_name>sys_documentation_sc_req_item_u_sub_subservicename_de</sys_update_name>
+            <sys_updated_by>T100516</sys_updated_by>
+            <sys_updated_on>2024-07-02 11:51:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

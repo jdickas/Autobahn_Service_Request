@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category">
+    <sc_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <entitlement_script/>
+        <header_icon/>
+        <homepage_image/>
+        <homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer>
+        <icon/>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture/>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent display_value="Sonstiges">e03cdc9ec3f8de502c03deee0501314b</parent>
+        <roles/>
+        <sc_catalog display_value="">0974ca09c37739102c03deee05013120</sc_catalog>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-09-24 09:16:44</sys_created_on>
+        <sys_id>f66c5c9ec3f8de502c03deee050131e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ServiceNow</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sc_category_f66c5c9ec3f8de502c03deee050131e8</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-09-24 09:16:44</sys_updated_on>
+        <title>ServiceNow</title>
+    </sc_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=f66c5c9ec3f8de502c03deee050131e8"/>
+</record_update>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <condition table="sc_req_item">state=1^EQ<item display_value="Open" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Open</label>
+        <name>Open</name>
+        <order>20</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>A100409</sys_created_by>
+        <sys_created_on>2024-02-23 10:36:58</sys_created_on>
+        <sys_id>90aae219c3acca502c03deee05013168</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Open</sys_name>
+        <sys_package display_value="">4d424477c3f275102c03deee050131d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_process_flow_90aae219c3acca502c03deee05013168</sys_update_name>
+        <sys_updated_by>A100409</sys_updated_by>
+        <sys_updated_on>2024-02-29 13:07:34</sys_updated_on>
+        <table>sc_req_item</table>
+    </sys_process_flow>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</claim_owner_scope>
+        <claim_timestamp>18dd594c9ae0000001</claim_timestamp>
+        <metadata_update_name>sys_process_flow_90aae219c3acca502c03deee05013168</metadata_update_name>
+        <previous_claim_app_version>1.8.0</previous_claim_app_version>
+        <previous_claim_name>Autobahn Service Request</previous_claim_name>
+        <previous_claim_scope>d80b6c02c3c04e502c03deee0501316f</previous_claim_scope>
+        <sys_created_by>A100409</sys_created_by>
+        <sys_created_on>2024-02-23 10:48:34</sys_created_on>
+        <sys_id>564daa1dc3acca502c03deee050131f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>A100409</sys_updated_by>
+        <sys_updated_on>2024-02-23 10:48:34</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</claim_owner_scope>
+        <claim_timestamp>18dd594c9ab0000001</claim_timestamp>
+        <metadata_update_name>sys_process_flow_90aae219c3acca502c03deee05013168</metadata_update_name>
+        <previous_claim_app_version>1.7.1</previous_claim_app_version>
+        <previous_claim_name>Autobahn Core</previous_claim_name>
+        <previous_claim_scope>4d424477c3f275102c03deee050131d7</previous_claim_scope>
+        <sys_created_by>A100409</sys_created_by>
+        <sys_created_on>2024-02-23 10:48:34</sys_created_on>
+        <sys_id>1a4daa1dc3acca502c03deee050131f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>A100409</sys_updated_by>
+        <sys_updated_on>2024-02-23 10:48:34</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" create_roles="catalog_admin" db_object_id="8c4115fe0da112104f349799ccc973a2" extends="task" label="Catalog Task" max_length="40" name="sc_task" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Pending Time" max_length="40" name="u_pending_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_ritm_work_notes" type="journal_input"/>
+        <element attributes="edge_encryption_enabled=true" dependent="u_ritm_work_notes, u_ritm_additional_comments" dependent_on_field="u_ritm_work_notes, u_ritm_additional_comments" label="RITM Comments and Work Notes" max_length="4000" name="u_ritm_comments_and_work_notes" type="journal_list" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Additional Comments" max_length="4000" name="u_ritm_additional_comments" type="journal_input"/>
+    </element>
+</database>

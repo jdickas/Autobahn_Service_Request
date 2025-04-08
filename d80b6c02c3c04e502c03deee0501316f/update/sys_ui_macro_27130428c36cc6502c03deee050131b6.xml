@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>autobahn_reason_ok_cancel</name>
+        <scoped_name/>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>A100410</sys_created_by>
+        <sys_created_on>2024-02-20 14:29:58</sys_created_on>
+        <sys_id>27130428c36cc6502c03deee050131b6</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>autobahn_reason_ok_cancel</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_ui_macro_27130428c36cc6502c03deee050131b6</sys_update_name>
+        <sys_updated_by>A100410</sys_updated_by>
+        <sys_updated_on>2024-02-20 15:02:36</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <j:set var="jvar_isDoctype" value="${GlideMobileExtensions.getDeviceType()}" />
+    <g:macro dialog_id=""
+        label_style="width: 8%; position: relative;"
+        field_style="width: 85%; position: relative; float: left;"
+        textarea_id="note_text"
+        textarea_label=""
+        textarea_label_title=""
+        textarea_name="note_text"
+        textarea_onkeyup="enableButton()"
+        textarea_onchange="enableButton()"
+        textarea_style="height:auto; width: 100%; resize: vertical;"
+        textarea_title="54645"
+
+        ok=""
+        ok_action=""
+        ok_id="change_confirm_ok_btn"
+        ok_title="${gs.getMessage('Cancel change request')}"
+        ok_type="button"
+        ok_style_class="btn btn-primary disabled"
+        cancel_title="${gs.getMessage('Close the dialog')}"
+        cancel=""
+        cancel_type="button"
+    />
+    <j:if test="${jvar_isDoctype == 'doctype'}">
+        <g:dialog_notes_ok_cancel_doctype />
+    </j:if>
+    <j:if test="${jvar_isDoctype != 'doctype'}">
+        <g:dialog_notes_ok_cancel_nondoctype />
+    </j:if>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

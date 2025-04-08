@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Ordner im Laufwerk O: neu erstellen">e765bc63c3581a904de0d0cf05013105</catalog_item>
+        <catalog_variable>IO:6b15657bc39456902c03deee050131e8</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>false</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-09-05 13:26:05</sys_created_on>
+        <sys_id>3a4f5b0cc3acda904de0d0cf050131c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ref_approver_3</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_3a4f5b0cc3acda904de0d0cf050131c4</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-09-05 13:26:05</sys_updated_on>
+        <table/>
+        <ui_policy display_value="set Mandatory  Ref Users">7e9e13c8c3acda904de0d0cf05013154</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>ref_approver_3</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=3a4f5b0cc3acda904de0d0cf050131c4"/>
+</record_update>

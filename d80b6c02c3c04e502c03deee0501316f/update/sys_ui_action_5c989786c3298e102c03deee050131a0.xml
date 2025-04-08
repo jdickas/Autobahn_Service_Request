@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>state_model_move_to_canceled</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.state == '2'  || current.state == '-5'  || current.state == '111'</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Cancel</name>
+        <onclick>setChangeCancelState();</onclick>
+        <order>90</order>
+        <script><![CDATA[var changeConfirmCancelDialog;
+
+function setChangeCancelState() {
+    g_form.setValue("state", "8");
+}
+
+if (typeof window == 'undefined')
+    setRedirect();
+
+function setRedirect() {
+    var myLog = new Logger(Logger.DEF, 'UI Action', 'RITM Cancel');
+    ritmsysId = current.sys_id;
+    new global.ServiceRequestUtil().closeCatalogTasks(ritmsysId);
+    new global.ServiceRequestUtil().closeApprovals(ritmsysId);
+    new global.ServiceRequestUtil().closeGroupApprovals(ritmsysId);
+    myLog.debug('RITM = ' + ritmsysId + ' NUMBER ' + current.number + ' state ' + current.state);
+
+    myLog.debug('closed_rejected');
+    var valueApproval = 'rejected';
+    var valueReqState = 'closed_cancelled';
+
+
+    if (JSUtil.notNil(valueApproval) && JSUtil.notNil(valueReqState)) {
+        myLog.debug('closed_rejected notNil');
+        new global.ServiceRequestUtil().closeServiceRequests(ritmsysId, valueApproval, valueReqState);
+        myLog.debug('closed_rejected_done');
+    }
+
+	/*
+	var ritmsOpen = new global.ServiceRequestUtil().areOtherRITMSactive(current.sys_id, current.request);
+
+    if (JSUtil.notNil(valueApproval) && JSUtil.notNil(valueReqState) && ritmsOpen) {
+        myLog.debug('RITMs Open');
+		valueApproval = 'requested';
+    	valueReqState = 'requested';
+        new global.ServiceRequestUtil().keepOpenServiceRequests(ritmsysId, valueApproval, valueReqState);
+        myLog.debug('reopen_done');
+    }
+	*/	
+
+    //current.approval = 'rejected';
+	//current.active = false; // try it
+    current.stage = 'req_cancelled';
+    current.state = 8;
+    current.update();
+    action.setRedirectURL(current);
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-15 14:55:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5c989786c3298e102c03deee050131a0</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>Cancel</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Autobahn Shared Library " source="2a274429c333b9102c03deee0501311c">2a274429c333b9102c03deee0501311c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_ui_action_5c989786c3298e102c03deee050131a0</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-26 13:25:47</sys_updated_on>
+        <table>sc_req_item</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</claim_owner_scope>
+        <claim_timestamp>18ee5cb93670000001</claim_timestamp>
+        <metadata_update_name>sys_ui_action_5c989786c3298e102c03deee050131a0</metadata_update_name>
+        <previous_claim_app_version>1.11.1</previous_claim_app_version>
+        <previous_claim_name>Autobahn Service Request</previous_claim_name>
+        <previous_claim_scope>d80b6c02c3c04e502c03deee0501316f</previous_claim_scope>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-16 07:25:07</sys_created_on>
+        <sys_id>b6fabad2c369ce102c03deee050131b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-16 07:25:07</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</claim_owner_scope>
+        <claim_timestamp>18ee5cb93600000001</claim_timestamp>
+        <metadata_update_name>sys_ui_action_5c989786c3298e102c03deee050131a0</metadata_update_name>
+        <previous_claim_app_version>1.11.0</previous_claim_app_version>
+        <previous_claim_name>Autobahn Shared Library </previous_claim_name>
+        <previous_claim_scope>2a274429c333b9102c03deee0501311c</previous_claim_scope>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-16 07:25:07</sys_created_on>
+        <sys_id>7afabad2c369ce102c03deee050131b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-16 07:25:07</sys_updated_on>
+    </sys_claim>
+</record_update>

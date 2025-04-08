@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>ritm_restart_approval</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>Reset and restart workflow context</comments>
+        <condition>current.approval == 'requested' &amp;&amp; current.state== -5 </condition>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages>The Approval process has been restarted.</messages>
+        <name>Restart Approval</name>
+        <onclick>resetTicket()</onclick>
+        <order>100</order>
+        <script><![CDATA[(function() {
+
+    var flow = current.cat_item.flow_designer_flow;
+
+    var flowName = flow.name;
+    var flowId = current.flow_context;
+    var msG = gs.getMessage('The Approval process has been restarted.');
+	
+    var rec = new GlideRecord('sysapproval_approver');
+    rec.addQuery('sysapproval', current.sys_id);
+    rec.addNullQuery('wf_activity');
+    rec.query();
+
+    while (rec.next()) {
+        rec.state = 'cancelled';
+        rec.comments = msG;
+        rec.update();
+        // rec.deleteRecord();
+    }
+
+    var reci = new GlideRecord('sysapproval_group');
+    reci.addQuery('parent', current.sys_id);
+
+    reci.query();
+
+    while (reci.next()) {
+        reci.approval = 'cancelled';
+        reci.active = 'false';
+        reci.comments = msG;
+        reci.short_description = msG;
+        reci.update();
+        // reci.deleteRecord();
+    }
+
+    var now_GR = new GlideRecord("sys_flow_context");
+    now_GR.addQuery("name", flowName);
+	now_GR.addQuery("source_record",current.sys_id);
+    now_GR.query();
+
+    while (now_GR.next()) {
+        sn_fd.FlowAPI.cancel(now_GR.getUniqueValue(), 'Flow was Cancelled');
+    }
+
+    sn_fd.FlowAPI.getRunner().restartFlowFromContext(flowId, null);
+
+    action.setRedirectURL(current);
+})();]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>A100410</sys_created_by>
+        <sys_created_on>2024-02-29 08:46:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de08c99fc32006902c03deee050131c0</sys_id>
+        <sys_mod_count>132</sys_mod_count>
+        <sys_name>Restart Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_ui_action_de08c99fc32006902c03deee050131c0</sys_update_name>
+        <sys_updated_by>A100409</sys_updated_by>
+        <sys_updated_on>2025-02-12 15:15:00</sys_updated_on>
+        <table>sc_req_item</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>de08c99fc32006902c03deee050131c0</id>
+        <sys_created_by>A100409</sys_created_by>
+        <sys_created_on>2025-02-12 15:15:00</sys_created_on>
+        <sys_id>86a6bbe3c3a79a102c03deee050131b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>A100409</sys_updated_by>
+        <sys_updated_on>2025-02-12 15:15:00</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

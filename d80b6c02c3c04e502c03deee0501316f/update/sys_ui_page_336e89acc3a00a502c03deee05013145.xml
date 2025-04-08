@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function continueOK() {
+    var cat = gel('work_notes').value;
+    var user = gel('u_pending_timer').value;
+    var namer = gel('u_on_hold_reason').value;
+
+    if (!namer || !user || cat.length < 2) {
+        var reqFil = getMessage('Please populate all the required fields. *');
+        alert(reqFil);
+        return false;
+    }
+
+    // Function to convert a date to a specific timezone
+    function convertToTimezone(date, timezoneOffset) {
+        var utcDate = new Date(date.getTime() + date.getTimezoneOffset() * 60000);
+        return new Date(utcDate.getTime() + timezoneOffset * 60000);
+    }	
+
+    //var currentDate = new Date();
+    //var selectedDate = new Date(user);
+	var givenDate = getDateFromFormat(user, g_user_date_time_format);
+	var selectedDate = new Date(givenDate);
+
+	var userTimezoneOffset = selectedDate.getTimezoneOffset();
+    var currentDate = convertToTimezone(new Date(), userTimezoneOffset);
+
+	/*
+    if (selectedDate <= currentDate) {
+        var onHold = getMessage('Resubmission date and time should not be in the past!');
+        alert(onHold);
+        return false;
+    }
+	*/
+    // Compare the selected date with the current date
+    if (convertToTimezone(new Date(selectedDate), userTimezoneOffset) < currentDate) {
+        // If selected date is in the past, display an error message
+        //g_form.showFieldMsg('u_pending_timer', 'ausgewähltes Datum muss in der Zukunft liegen!', 'error');
+		var onHold = getMessage('Resubmission date and time should not be in the past!');
+        alert(onHold);
+        // Clear the selected date
+        //dateField.value = '';
+		//g_form.setValue('u_pending_timer', user);
+		return false;
+    } //else {
+        // If selected date is valid, clear any previous error message
+        //g_form.hideFieldMsg('u_pending_timer');
+    //}	
+
+    g_form.setValue('work_notes', cat);
+    g_form.setValue('u_pending_timer', user);
+    g_form.setValue('u_on_hold_reason', namer);
+
+    g_form.save();
+
+    GlideDialogWindow.get().destroy();
+    return true;
+}
+
+
+function continueCancel() {
+    GlideDialogWindow.get().destroy();
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint/>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+  <div style="text-align: center;">
+    <g:ui_form>
+      <table style="margin: auto;">
+        <tr>
+          <td colspan="2" style="height: 20px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="u_on_hold_reason" style="font-size: 16px;">${gs.getMessage('Please select the On Hold reason.*')}</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height: 5px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <g:ui_choicelist
+              style="width: 100%;"
+              name="u_on_hold_reason"
+              id="u_on_hold_reason"
+              table="sc_task"
+              mandatory="true"
+              field="u_on_hold_reason"
+              query="active=true"
+              onchange="enableSubmitButton()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height: 20px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="u_pending_time" style="font-size: 16px;">${gs.getMessage('Resubmission on (dd.MM.yyyy HH:mm:ss)*')}</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height: 5px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <g:ui_date_time
+              name="u_pending_timer"
+              id="u_pending_timer"
+              table="sc_task"
+              mandatory="true"
+              field="u_pending_timer"
+              style="width: 100%;"
+              onchange="enableSubmitButton()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height: 20px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="work_notes" style="font-size: 16px;">${gs.getMessage('Please describe the On Hold reason.*')}</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height: 5px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <g:textarea
+              name="work_notes"
+              id="work_notes"
+              mandatory="true"
+              maxlength="300"
+              style="height: 60px; width: 325px; resize: none;"
+              onchange="enableSubmitButton()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height: 20px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height: 20px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <g:dialog_buttons_ok_cancel
+              ok_id="submitData"
+              ok="return continueOK()"
+              ok_type="button"
+              ok_text="${gs.getMessage('Ok')}"
+              ok_style_class="btn btn-primary"
+              ok_disabled="!areAllFieldsPopulated()"
+              cancel_type="button"
+              cancel_id="cancelData"
+              cancel_style_class="btn btn-default"
+              cancel="return continueCancel()"
+              style="padding: 10px;"
+            />
+          </td>
+        </tr>
+      </table>
+    </g:ui_form>
+  </div>
+</j:jelly>
+]]></html>
+        <name>autobahn_on_hold_reason</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>A100410</sys_created_by>
+        <sys_created_on>2024-02-20 19:58:43</sys_created_on>
+        <sys_id>336e89acc3a00a502c03deee05013145</sys_id>
+        <sys_mod_count>97</sys_mod_count>
+        <sys_name>autobahn_on_hold_reason</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_ui_page_336e89acc3a00a502c03deee05013145</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-11-14 15:12:46</sys_updated_on>
+    </sys_ui_page>
+</record_update>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="ServiceNow - Gruppen Management ">501fc09ec3b8de502c03deee0501319b</catalog_item>
+        <catalog_variable>IO:c1e3d112c37012902c03deee05013139</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>200</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-09-25 12:10:53</sys_created_on>
+        <sys_id>7ced86a6c3f4da504de0d0cf05013108</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>u_user_to_remove</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_7ced86a6c3f4da504de0d0cf05013108</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-09-26 12:08:24</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Set RO Mitglieder entfernen wenn keine Gruppe ausgewählt">b18d4e66c3f4da504de0d0cf0501315d</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>u_user_to_remove</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=7ced86a6c3f4da504de0d0cf05013108"/>
+</record_update>

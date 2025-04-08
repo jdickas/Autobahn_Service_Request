@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sc_req_item">state=111^EQ<item display_value="On Hold" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="111"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>On Hold</label>
+        <name>On Hold</name>
+        <order>35</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>A100409</sys_created_by>
+        <sys_created_on>2024-02-23 13:46:17</sys_created_on>
+        <sys_id>69f59bddc3600e502c03deee0501310b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>On Hold</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_process_flow_69f59bddc3600e502c03deee0501310b</sys_update_name>
+        <sys_updated_by>A100409</sys_updated_by>
+        <sys_updated_on>2024-02-23 13:46:43</sys_updated_on>
+        <table>sc_req_item</table>
+    </sys_process_flow>
+</record_update>

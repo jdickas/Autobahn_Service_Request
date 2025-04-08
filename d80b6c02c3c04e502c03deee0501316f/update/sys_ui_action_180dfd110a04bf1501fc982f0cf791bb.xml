@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>false</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.request_state == 'requested' || current.request_state == 'in_process'</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Cancel Request</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[current.request_state = 'closed_cancelled';
+current.stage = 'closed_incomplete';
+current.update();]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>glide.maint</sys_created_by>
+        <sys_created_on>2008-03-07 16:37:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>180dfd110a04bf1501fc982f0cf791bb</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Cancel Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Service Catalog core applications" source="com.glideapp.servicecatalog">413151fe0da112104f349799ccc97319</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_ui_action_180dfd110a04bf1501fc982f0cf791bb</sys_update_name>
+        <sys_updated_by>A100410</sys_updated_by>
+        <sys_updated_on>2024-03-11 15:58:45</sys_updated_on>
+        <table>sc_request</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</claim_owner_scope>
+        <claim_timestamp>18e2e3ca2c20000001</claim_timestamp>
+        <metadata_update_name>sys_ui_action_180dfd110a04bf1501fc982f0cf791bb</metadata_update_name>
+        <previous_claim_app_version>1.11.0</previous_claim_app_version>
+        <previous_claim_name>Autobahn Service Request</previous_claim_name>
+        <previous_claim_scope>d80b6c02c3c04e502c03deee0501316f</previous_claim_scope>
+        <sys_created_by>A100410</sys_created_by>
+        <sys_created_on>2024-03-11 15:58:29</sys_created_on>
+        <sys_id>7737dbfac3700e102c03deee050131d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>A100410</sys_updated_by>
+        <sys_updated_on>2024-03-11 15:58:29</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</claim_owner_scope>
+        <claim_timestamp>18e2e3ca2c10000001</claim_timestamp>
+        <metadata_update_name>sys_ui_action_180dfd110a04bf1501fc982f0cf791bb</metadata_update_name>
+        <previous_claim_app_version/>
+        <previous_claim_name>com.glideapp.servicecatalog</previous_claim_name>
+        <previous_claim_scope>com.glideapp.servicecatalog</previous_claim_scope>
+        <sys_created_by>A100410</sys_created_by>
+        <sys_created_on>2024-03-11 15:58:29</sys_created_on>
+        <sys_id>3f37dbfac3700e102c03deee050131d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>A100410</sys_updated_by>
+        <sys_updated_on>2024-03-11 15:58:29</sys_updated_on>
+    </sys_claim>
+</record_update>

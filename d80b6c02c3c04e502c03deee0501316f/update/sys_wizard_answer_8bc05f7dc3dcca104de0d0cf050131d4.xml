@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Angefordertes Element</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Angefordertes Element</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">60cc817a0d2112104f349799ccc973ae</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>T100516</sys_created_by>
+        <sys_created_on>2024-02-12 16:25:00</sys_created_on>
+        <sys_id>8bc05f7dc3dcca104de0d0cf050131d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Angefordertes Element</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_wizard_answer_8bc05f7dc3dcca104de0d0cf050131d4</sys_update_name>
+        <sys_updated_by>T100516</sys_updated_by>
+        <sys_updated_on>2024-02-12 16:25:00</sys_updated_on>
+        <table/>
+        <target_url>sc_req_item.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

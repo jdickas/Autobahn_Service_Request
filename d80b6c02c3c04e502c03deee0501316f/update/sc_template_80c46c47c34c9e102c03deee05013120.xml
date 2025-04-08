@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_template">
+    <sc_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <available_for/>
+        <cat_item display_value="Catalog Item Builder">91edb87273221010c84e2bb43cf6a7ae</cat_item>
+        <name>JD Template</name>
+        <short_description>Test Template</short_description>
+        <sys_class_name>sc_template</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-08-20 11:01:38</sys_created_on>
+        <sys_id>80c46c47c34c9e102c03deee05013120</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>JD Template</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sc_template_80c46c47c34c9e102c03deee05013120</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-08-20 11:01:38</sys_updated_on>
+        <use_template_scope>false</use_template_scope>
+    </sc_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=80c46c47c34c9e102c03deee05013120"/>
+</record_update>

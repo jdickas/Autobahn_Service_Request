@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="u_sc_cat_item_meta">
+    <u_sc_cat_item_meta action="INSERT_OR_UPDATE">
+        <sys_class_name>u_sc_cat_item_meta</sys_class_name>
+        <sys_created_by>T100516</sys_created_by>
+        <sys_created_on>2025-02-11 11:55:17</sys_created_on>
+        <sys_id>5b4ff1d7c3eb1a102c03deee05013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CATM0001147</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>u_sc_cat_item_meta_5b4ff1d7c3eb1a102c03deee05013122</sys_update_name>
+        <sys_updated_by>T100516</sys_updated_by>
+        <sys_updated_on>2025-02-11 11:55:17</sys_updated_on>
+        <u_addition_recipient>false</u_addition_recipient>
+        <u_ci_choice>false</u_ci_choice>
+        <u_ci_filter/>
+        <u_ci_filter_table>cmdb_ci</u_ci_filter_table>
+        <u_instructions_label/>
+        <u_number>CATM0001147</u_number>
+        <u_option_label/>
+        <u_origin/>
+        <u_sc_cat_item display_value="">6a86090fc3ab96105798087dc001317e</u_sc_cat_item>
+        <u_suboption_label/>
+        <u_subsuboption_label/>
+    </u_sc_cat_item_meta>
+</record_update>

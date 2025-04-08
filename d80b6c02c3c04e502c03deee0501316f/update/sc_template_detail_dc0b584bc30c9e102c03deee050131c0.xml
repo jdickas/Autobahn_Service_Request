@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_template_detail">
+    <sc_template_detail action="INSERT_OR_UPDATE">
+        <applies_to_multi_row_variable_set>false</applies_to_multi_row_variable_set>
+        <item_option_new display_value="Description">1e70013673221010c84e2bb43cf6a791</item_option_new>
+        <mandatory>false</mandatory>
+        <readonly>true</readonly>
+        <restricted>false</restricted>
+        <set/>
+        <sys_class_name>sc_template_detail</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-08-20 10:18:35</sys_created_on>
+        <sys_id>dc0b584bc30c9e102c03deee050131c0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sc_template_detail_dc0b584bc30c9e102c03deee050131c0</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-08-20 10:20:14</sys_updated_on>
+        <template/>
+        <value>&lt;p&gt;Mit dieser Anforderung k&amp;ouml;nnen berechtigte Personen Verantwortlichkeiten an bestehenden Ordnern auf Laufwerk O: &amp;auml;ndern. Folgende &amp;Auml;nderungen sind m&amp;ouml;glich:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp; &amp;nbsp; - &amp;Auml;nderung des Ordnernamens&lt;br /&gt;&amp;nbsp; &amp;nbsp; - &amp;Auml;nderung des Eigent&amp;uuml;mers&lt;br /&gt;&amp;nbsp; &amp;nbsp; - &amp;Auml;nderung des Stellvertreters&lt;br /&gt;&amp;nbsp; &amp;nbsp; - &amp;Auml;nderung der Genehmigungsberechtigten&lt;/p&gt;</value>
+    </sc_template_detail>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="INSERT_OR_UPDATE">
+        <element>name</element>
+        <id/>
+        <label>Benutzer Genehmigung</label>
+        <language>de</language>
+        <name>stage_set_entry</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-04-30 11:09:31</sys_created_on>
+        <sys_id>52943bbac3718a504de0d0cf05013144</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Benutzer Genehmigung</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_translated_52943bbac3718a504de0d0cf05013144</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-30 12:08:54</sys_updated_on>
+        <value>User Approval</value>
+    </sys_translated>
+</record_update>

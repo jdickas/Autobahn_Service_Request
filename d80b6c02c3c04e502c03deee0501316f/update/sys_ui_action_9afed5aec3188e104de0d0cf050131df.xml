@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>onHold_sc_task</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+    if (!g_form.hasField("state")) {
+        getMessage('Cannot confirm the Problem as \'State\' is not visible', function(msg) {
+            g_form.addErrorMessage(msg);
+        });
+        return false;
+    }
+    /*
+    var gm = new GlideModal('autobahn_on_hold_reason', 648, 350);
+    var reqFil = getMessage('On Hold Reason');
+        
+	gm.setTitle(reqFil);
+	gm.render();
+    updateTask();
+	*/
+    var fields = [{
+            type: 'choice',
+            name: 'On Hold Reason',
+            label: getMessage('Please select the On Hold reason.'),
+            value: getMessage(' -- Select -- '),
+            choices: [{
+                    displayValue: 'Caller',
+                    value: '1'
+                },
+                {
+                    displayValue: 'Vendor',
+                    value: '2'
+                }
+            ],
+            mandatory: true
+        },
+        /*
+        {
+            type: 'reference',
+            name: 'On Hold Reason',
+            label: getMessage('Please select the On Hold reason.'),
+            mandatory: true,
+            reference: 'sc_task',
+            referringTable: 'u_on_hold_reason',
+            referringRecordId: g_form.getUniqueValue(),
+            value: g_form.getValue('u_on_hold_reason'),
+            displayValue: g_form.getDisplayValue('u_on_hold_reason')
+        },	
+
+        {
+            type: 'reference',
+            name: 'Pending Timer',
+            label: getMessage('Resubmission on (yyyy-MM-dd dd:HH:mm:ss)'),
+            mandatory: true,
+            reference: 'sc_task',
+            referringTable: 'u_pending_timer',
+            referringRecordId: g_form.getUniqueValue(),
+            value: g_form.getValue('u_pending_timer'),
+            displayValue: g_form.getDisplayValue('u_pending_timer')
+        },
+		*/
+        {
+            type: 'string',
+            name: 'Pending Timer',
+            label: getMessage('Resubmission on (yyyy-MM-dd HH:mm:ss)'),
+            mandatory: true
+        },
+        {
+            type: 'textarea',
+            name: 'work_notes',
+            label: getMessage('Reason'),
+            mandatory: true
+        }
+    ];
+
+    g_modal.showFields({
+        title: "Enter your reason",
+        fields: fields,
+        size: 'lg'
+    }).then(function(fieldValues) {
+        now = new Date();
+        
+		if (fieldValues.updatedFields[1].value != '' && new Date(fieldValues.updatedFields[1].value) > now) {
+            g_form.setValue('state', 111);
+            //g_form.addInfoMessage('On Hold Reason: ', fieldValues.updatedFields[2].value);
+            g_form.setValue('u_on_hold_reason', fieldValues.updatedFields[0].value);
+            //if (g_form.getValue('u_pending_timer') != ''  && fieldValues.updatedFields[1].value > now) {
+            g_form.setValue('u_pending_timer', fieldValues.updatedFields[1].value);
+            //}
+            //g_form.setValue('u_pending_timer', fieldValues.updatedFields[1].value);
+            g_form.setValue('work_notes', fieldValues.updatedFields[2].value);
+            g_form.save();
+        } else {
+            g_modal.alert('Datum der Wiedervorlage muss in der Zukunft liegen! :-)');
+        }
+
+        //Give Feedback
+    });
+}
+
+function updateTask() {
+
+    var newState = g_scratchpad.onHold;
+    var onHoldReasonValue = g_form.getValue('u_on_hold_reason');
+
+    g_form.setValue('state', newState);
+    if (onHoldReasonValue > 0) {
+        g_form.save();
+    }
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.state.canWrite() &amp;&amp; current.state == global.Constants_Service_Requests.SC_Task_WORK_IN_PROGRESS &amp;&amp; current.approval != 'requested'</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>true</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>On Hold</name>
+        <onclick>onHoldTask()</onclick>
+        <order>90</order>
+        <script><![CDATA[function onHoldTask() {
+    if (!g_form.hasField("state")) {
+        getMessage('Cannot confirm the Problem as \'State\' is not visible', function(msg) {
+            g_form.addErrorMessage(msg);
+        });
+        return false;
+    }
+var gm = new GlideModal('autobahn_on_hold_reason', 648, 350);
+ var reqFil = getMessage('On Hold Reason');
+        
+	gm.setTitle(reqFil);
+	gm.render();
+    updateTask();
+
+}
+
+function updateTask() {
+
+	var newState = g_scratchpad.onHold;
+	var onHoldReasonValue = g_form.getValue('u_on_hold_reason');
+
+    g_form.setValue('state', newState);
+    if (onHoldReasonValue > 0) {
+		g_form.save();
+	}
+
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-02-14 16:03:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9afed5aec3188e104de0d0cf050131df</sys_id>
+        <sys_mod_count>49</sys_mod_count>
+        <sys_name>On Hold</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_ui_action_9afed5aec3188e104de0d0cf050131df</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-04-15 08:38:52</sys_updated_on>
+        <table>sc_task</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

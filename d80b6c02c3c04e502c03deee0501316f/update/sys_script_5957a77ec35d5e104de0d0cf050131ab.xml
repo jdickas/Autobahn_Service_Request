@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sc_req_item</collection>
+        <condition>current.comments.changes()</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>sc_req_item comments events</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[gs.eventQueue("sc_req_item.commented", current, gs.getUserID(), gs.getUserName());
+queueAssigneeEvent();
+
+function queueAssigneeEvent() {
+   var assigneeArr = [];
+   var assignGroupArr = [];
+   //Query for non-pending sc_task records
+   var catTsk = new GlideRecord('sc_task');
+   catTsk.addQuery('request_item', current.sys_id);
+   catTsk.addQuery('state', '!=', -5);
+   catTsk.query();
+   if (!catTsk.hasNext()) {
+      gs.addInfoMessage(gs.getMessage('Comment cannot be viewed by technicians until the approval has been carried out on the Requested Item'));
+      return;
+   }
+   while (catTsk.next()) {
+      //notify task assignees
+      if (!catTsk.assigned_to.nil())
+         assigneeArr.push(catTsk.assigned_to.toString());
+      else
+         assignGroupArr.push(catTsk.assignment_group.toString());
+      //Add Work notes watch list users
+      assigneeArr.push(catTsk.work_notes_list.toString());
+   }
+   gs.eventQueue("sc_req_item.commented.itil", current, assigneeArr, assignGroupArr);
+}
+
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>J100251</sys_created_by>
+        <sys_created_on>2024-10-21 09:51:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5957a77ec35d5e104de0d0cf050131ab</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>sc_req_item comments events</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_script_5957a77ec35d5e104de0d0cf050131ab</sys_update_name>
+        <sys_updated_by>J100251</sys_updated_by>
+        <sys_updated_on>2025-03-21 07:19:45</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=5957a77ec35d5e104de0d0cf050131ab"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5957a77ec35d5e104de0d0cf050131ab</id>
+        <sys_created_by>J100251</sys_created_by>
+        <sys_created_on>2025-03-20 21:19:12</sys_created_on>
+        <sys_id>c043261fc3d8a6104de0d0cf0501314f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>J100251</sys_updated_by>
+        <sys_updated_on>2025-03-20 21:19:12</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.belongsToReferenceQualifier</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>belongsToReferenceQualifier</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var belongsToReferenceQualifier = Class.create();
+
+belongsToReferenceQualifier.prototype = {
+    initialize: function() {},
+
+    getRecords: function() {
+        var results = [];
+
+        // Fetch records from the cmdb_ci_service table
+        var cmdbCiService = new GlideRecord('cmdb_ci_service');
+        cmdbCiService.addActiveQuery();
+        cmdbCiService.addQuery('service_classification', 'IT-Service');
+        cmdbCiService.query();
+
+        while (cmdbCiService.next()) {
+            results.push(cmdbCiService.sys_id.toString());
+        }
+
+        // Fetch records from the service_offering table
+        var serviceOffering = new GlideRecord('service_offering');
+        serviceOffering.addQuery('active', true);
+        serviceOffering.query();
+
+        while (serviceOffering.next()) {
+            results.push(serviceOffering.sys_id.toString());
+        }
+
+        return results.join(',');
+    },
+
+    type: 'belongsToReferenceQualifier'
+};
+
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>A100410</sys_created_by>
+        <sys_created_on>2024-07-02 10:08:29</sys_created_on>
+        <sys_id>2ec204d3c3470e502c03deee05013133</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>belongsToReferenceQualifier</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_script_include_2ec204d3c3470e502c03deee05013133</sys_update_name>
+        <sys_updated_by>A100410</sys_updated_by>
+        <sys_updated_on>2024-07-02 10:13:42</sys_updated_on>
+    </sys_script_include>
+</record_update>

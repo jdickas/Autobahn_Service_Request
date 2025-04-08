@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="502b81aac3d48e104de0d0cf05013163" sys_domain="global" table="sc_task" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>P100126</sys_created_by>
+            <sys_created_on>2024-02-14 14:36:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c2b81aac3d48e104de0d0cf05013166</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sc_task" name="sc_task" sys_domain="global" view="Default view">502b81aac3d48e104de0d0cf05013163</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="sc_task" sys_domain="global" view="Default view">8687fbccc611229100727249a775cc31</sys_ui_section>
+            <sys_updated_by>P100126</sys_updated_by>
+            <sys_updated_on>2024-02-14 14:36:26</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>P100126</sys_created_by>
+            <sys_created_on>2024-02-23 08:10:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3f29c291c32cca502c03deee050131cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sc_task" name="sc_task" sys_domain="global" view="Default view">502b81aac3d48e104de0d0cf05013163</sys_ui_form>
+            <sys_ui_section caption="Task Notes" display_value="Task Notes" name="sc_task" sys_domain="global" view="Default view">ef29c291c32cca502c03deee05013132</sys_ui_section>
+            <sys_updated_by>P100126</sys_updated_by>
+            <sys_updated_on>2024-02-23 08:10:50</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>J100251</sys_created_by>
+            <sys_created_on>2025-03-18 14:47:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5066b2e6c39426105798087dc001315f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sc_task" name="sc_task" sys_domain="global" view="Default view">502b81aac3d48e104de0d0cf05013163</sys_ui_form>
+            <sys_ui_section display_value="">cc66b2e6c39426105798087dc001315a</sys_ui_section>
+            <sys_updated_by>J100251</sys_updated_by>
+            <sys_updated_on>2025-03-18 14:47:51</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>P100126</sys_created_by>
+            <sys_created_on>2024-02-23 08:10:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb29c291c32cca502c03deee050131d5</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sc_task" name="sc_task" sys_domain="global" view="Default view">502b81aac3d48e104de0d0cf05013163</sys_ui_form>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="sc_task" sys_domain="global" view="Default view">e729c291c32cca502c03deee050131ca</sys_ui_section>
+            <sys_updated_by>J100251</sys_updated_by>
+            <sys_updated_on>2025-03-18 14:47:51</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>P100126</sys_created_by>
+            <sys_created_on>2024-02-23 08:10:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ff29c291c32cca502c03deee050131d9</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sc_task" name="sc_task" sys_domain="global" view="Default view">502b81aac3d48e104de0d0cf05013163</sys_ui_form>
+            <sys_ui_section caption="Management" display_value="Management" name="sc_task" sys_domain="global" view="Default view">a329c291c32cca502c03deee050131cb</sys_ui_section>
+            <sys_updated_by>J100251</sys_updated_by>
+            <sys_updated_on>2025-03-18 14:47:51</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sc_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>P100126</sys_created_by>
+            <sys_created_on>2024-02-14 14:36:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>502b81aac3d48e104de0d0cf05013163</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>sc_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Global" source="global">global</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+            <sys_update_name>sys_ui_form_sections_502b81aac3d48e104de0d0cf05013163</sys_update_name>
+            <sys_updated_by>T100516</sys_updated_by>
+            <sys_updated_on>2024-02-29 09:01:54</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</claim_owner_scope>
+        <claim_timestamp>18df419486e0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_form_sections_502b81aac3d48e104de0d0cf05013163</metadata_update_name>
+        <previous_claim_app_version>1.9.0</previous_claim_app_version>
+        <previous_claim_name>Autobahn Service Request</previous_claim_name>
+        <previous_claim_scope>d80b6c02c3c04e502c03deee0501316f</previous_claim_scope>
+        <sys_created_by>T100516</sys_created_by>
+        <sys_created_on>2024-02-29 09:01:54</sys_created_on>
+        <sys_id>426e4d57c36006902c03deee050131d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>T100516</sys_updated_by>
+        <sys_updated_on>2024-02-29 09:01:54</sys_updated_on>
+    </sys_claim>
+</record_update>

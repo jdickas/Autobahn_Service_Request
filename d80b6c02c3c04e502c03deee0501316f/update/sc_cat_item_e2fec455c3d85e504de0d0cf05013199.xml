@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
+    <sc_cat_item action="INSERT_OR_UPDATE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category display_value="">3457e3e2c3e442902c03deee0501311b</category>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan/>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Mit dieser Anforderung können berechtigte Personen Verantwortlichkeiten an bestehenden Ordnern auf Laufwerk P: ändern. Folgende Änderungen sind möglich:</p>
+<p>    - Änderung des Eigentümers<br />    - Änderung des Stellvertreters<br />    - Änderung der Genehmigungsberechtigten</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow display_value="Autobahn Catalog item AD Appr P">57280d91c3109e504de0d0cf05013161</flow_designer_flow>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <make_item_non_conversational>false</make_item_non_conversational>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Laufwerk P: ändern</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>true</no_cart_v2>
+        <no_delivery_time_v2>true</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>true</no_quantity_v2>
+        <no_save_as_draft>false</no_save_as_draft>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="">42a5f48ec332f1902c03deee05013101</owner>
+        <picture>0cc693f5c37bd2502c03deee050131a8</picture>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=e2fec455c3d85e504de0d0cf05013199&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <published_ref/>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <request_method>submit</request_method>
+        <roles/>
+        <sc_catalogs>0974ca09c37739102c03deee05013120</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <short_description>Organisatorische Informationen für bestehende Ordner in Laufwerk P: aktualisieren</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>sc_cat_item</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-08-27 09:16:30</sys_created_on>
+        <sys_id>e2fec455c3d85e504de0d0cf05013199</sys_id>
+        <sys_mod_count>85</sys_mod_count>
+        <sys_name>Laufwerk P: ändern</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sc_cat_item_e2fec455c3d85e504de0d0cf05013199</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-02-19 12:41:55</sys_updated_on>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <u_sc_cat_item_meta/>
+        <u_vset_visible_on_notification>true</u_vset_visible_on_notification>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <version>85</version>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=e2fec455c3d85e504de0d0cf05013199"/>
+    <fx_price action="delete_multiple" query="id=e2fec455c3d85e504de0d0cf05013199"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>price</field>
+        <id>e2fec455c3d85e504de0d0cf05013199</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-08-27 09:16:30</sys_created_on>
+        <sys_id>0fefc059c3d85e504de0d0cf0501313e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-08-27 09:16:30</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>recurring_price</field>
+        <id>e2fec455c3d85e504de0d0cf05013199</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-08-27 09:16:30</sys_created_on>
+        <sys_id>43efc059c3d85e504de0d0cf05013140</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-08-27 09:16:30</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#ecf2fa</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>picture</file_name>
+        <hash>d068ef6a10a499c5c51f188fb66309ecb8e613458f11b1014463690e2a672d5d</hash>
+        <image_height>100</image_height>
+        <image_width>100</image_width>
+        <size_bytes>2907</size_bytes>
+        <size_compressed>2930</size_compressed>
+        <state>available</state>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-02-19 12:41:55</sys_created_on>
+        <sys_id>0cc693f5c37bd2502c03deee050131a8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-02-19 12:41:55</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item</table_name>
+        <table_sys_id>e2fec455c3d85e504de0d0cf05013199</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="0cc693f5c37bd2502c03deee050131a8">0cc693f5c37bd2502c03deee050131a8</sys_attachment>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-02-19 12:41:55</sys_created_on>
+        <sys_id>4cc693f5c37bd2502c03deee050131a8</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>3896</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="0cc693f5c37bd2502c03deee050131a8">0cc693f5c37bd2502c03deee050131a8</sys_attachment>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2025-02-19 12:41:55</sys_created_on>
+        <sys_id>ccc693f5c37bd2502c03deee050131a8</sys_id>
+    </sys_attachment_doc>
+</record_update>

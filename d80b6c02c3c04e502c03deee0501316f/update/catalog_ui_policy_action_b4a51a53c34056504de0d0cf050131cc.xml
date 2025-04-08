@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Laufwerk O: ändern">6935303ec3bb86102c03deee05013193</catalog_item>
+        <catalog_variable>IO:b6cd3653c3778a102c03deee0501310d</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>false</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>130</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-08-21 13:53:10</sys_created_on>
+        <sys_id>b4a51a53c34056504de0d0cf050131cc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ref_approver_2</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_b4a51a53c34056504de0d0cf050131cc</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2025-04-03 13:05:01</sys_updated_on>
+        <table/>
+        <ui_policy display_value="set Mandatory  Ref Users">7fd41613c34056504de0d0cf050131e9</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>ref_approver_2</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=b4a51a53c34056504de0d0cf050131cc"/>
+</record_update>

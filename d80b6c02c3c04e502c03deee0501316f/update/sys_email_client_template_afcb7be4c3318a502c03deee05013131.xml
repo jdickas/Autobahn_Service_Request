@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email_client_template">
+    <sys_email_client_template action="INSERT_OR_UPDATE">
+        <blind_copied/>
+        <body/>
+        <body_html><![CDATA[<p style="line-height: normal; margin: 0cm 0cm 8pt; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 10.0pt; font-family: 'Times New Roman', serif;">Sehr geehrter Herr/Sehr geehrte Frau ${requested_for.name},</span></p>
+<p style="line-height: normal; margin: 0cm 0cm 8pt; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 10.0pt; font-family: 'Times New Roman', serif;">bezugnehmend auf die o.g. Anforderung kontaktieren wir Sie aus folgendem Grund:</span></p>
+<p style="line-height: normal; margin: 0cm 0cm 8pt; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 10.0pt; font-family: 'Times New Roman', serif;">xxx</span></p>
+<p style="line-height: normal; margin: 0cm 0cm 8pt; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 10.0pt; font-family: 'Times New Roman', serif;">Mit freundlichen Gr&uuml;&szlig;en&nbsp;</span></p>
+<p style="margin: 0cm 0cm 12pt; line-height: normal; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 10.0pt; font-family: 'Times New Roman', serif;">Ihr IT Service Center</span></p>
+<table class="MsoNormalTable" style="width: 530.25pt;" border="0" cellspacing="3" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 203.25pt; padding: .75pt .75pt .75pt .75pt;">
+<p style="margin: 0cm; line-height: normal; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 12.0pt; font-family: 'Times New Roman', serif;">Telefon</span></p>
+</td>
+<td style="width: 315.0pt; padding: .75pt .75pt .75pt .75pt;">
+<p style="margin: 0cm; line-height: normal; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 12.0pt; font-family: 'Times New Roman', serif;">0800/6273151</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 203.25pt; padding: .75pt .75pt .75pt .75pt;">
+<p style="margin: 0cm; line-height: normal; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 12.0pt; font-family: 'Times New Roman', serif;">E-Mail</span></p>
+</td>
+<td style="width: 315.0pt; padding: .75pt .75pt .75pt .75pt;">
+<p style="margin: 0cm; line-height: normal; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 12.0pt; font-family: 'Times New Roman', serif;">IT-Service-Center@Autobahn.de</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 203.25pt; padding: .75pt .75pt .75pt .75pt;">
+<p style="margin: 0cm; line-height: normal; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 12.0pt; font-family: 'Times New Roman', serif;">IT-Self-Service-Portal</span></p>
+</td>
+<td style="width: 315.0pt; padding: .75pt .75pt .75pt .75pt;">
+<p style="margin: 0cm; line-height: normal; font-size: 11pt; font-family: Calibri, sans-serif;"><a href="/esc" target="_blank" rel="noopener"><span style="font-size: 12.0pt; font-family: 'Times New Roman', serif; color: blue;">LINK</span></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 10.0pt; line-height: 107%; font-family: 'Times New Roman', serif;"><br><br></span><span style="font-size: 7.0pt; line-height: 107%; font-family: 'Times New Roman', serif;">Diese E-Mail und die beigef&uuml;gten Dokumente sind vertraulich und ausschlie&szlig;lich f&uuml;r den Adressaten bestimmt und sind m&ouml;glicherweise an Berechtigungen gekn&uuml;pft. <br>Sollten Sie diese E-Mail irrt&uuml;mlich erhalten, benachrichtigen Sie bitte sofort den Absender und vernichten Sie diese. Da ihre Unversehrtheit im Internet nicht gesichert <br>werden kann, deckt die Haftung der Atos-Gruppe nicht den Inhalt der Nachricht ab. Obwohl sich der Absender bem&uuml;ht, ein virenfreies Netzwerk zu gew&auml;hrleisten, <br>garantiert er nicht, dass diese &Uuml;bertragung virenfrei ist und haftet nicht f&uuml;r Sch&auml;den, die durch &uuml;bertragene Viren entstehen.</span></p>]]></body_html>
+        <condition/>
+        <content_type>text/html</content_type>
+        <copied/>
+        <email_client_from_address>6cc3b519c3f90e502c03deee050131a6</email_client_from_address>
+        <from/>
+        <from_generation_type>smtp_email_account</from_generation_type>
+        <include_attachments>false</include_attachments>
+        <name>Autobahn_ReQ Reply</name>
+        <order>10</order>
+        <recipients>requested_for</recipients>
+        <reply_to/>
+        <script_from><![CDATA[(function (fromAddressQuery, targetRecord) {
+		/**
+		 * fromAddressQuery: A GlideRecord on the table "sys_email_client_from_address". Add conditions to filter the
+		 * 		the email addresses displayed in the Email Client. 
+		 * targetRecord: A GlideRecord representing the record in which the Email Client was opened from
+		 */
+
+})(fromAddressQuery, targetRecord);]]></script_from>
+        <subject>${number} -  Die Autobahn GmbH des Bundes</subject>
+        <sys_class_name>sys_email_client_template</sys_class_name>
+        <sys_created_by>T100516</sys_created_by>
+        <sys_created_on>2024-04-23 11:56:17</sys_created_on>
+        <sys_id>afcb7be4c3318a502c03deee05013131</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Autobahn_ReQ Reply</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sys_email_client_template_afcb7be4c3318a502c03deee05013131</sys_update_name>
+        <sys_updated_by>J100251</sys_updated_by>
+        <sys_updated_on>2025-03-17 13:52:49</sys_updated_on>
+        <table>sc_request</table>
+    </sys_email_client_template>
+</record_update>

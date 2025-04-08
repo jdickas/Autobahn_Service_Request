@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  angular.module('sn.$sp').controller('userSelectorCtrl', function($scope, $http) {
+    var c = this;
+
+    // Benutzerliste initialisieren
+    c.users = [];
+
+    // Benutzerliste laden
+    $http.get('/api/now/table/sys_user?sysparm_fields=sys_id,name').then(function(response) {
+      c.users = response.data.result;
+    });
+
+    // Initialisierung des ausgewählten Benutzers
+    c.selectedUser = null;
+    c.selectedUserDetails = null;
+
+    // Funktion, die aufgerufen wird, wenn ein Benutzer ausgewählt wird
+    c.onUserChange = function() {
+      if (c.selectedUser) {
+        // Details des ausgewählten Benutzers laden
+        $http.get('/api/now/table/sys_user/' + c.selectedUser.sys_id + '?sysparm_fields=sys_id,name,email').then(function(response) {
+          c.selectedUserDetails = response.data.result;
+        });
+      } else {
+        c.selectedUserDetails = null;
+      }
+    };
+  });
+}();]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>user_selector</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>UserSelector</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>C100219</sys_created_by>
+        <sys_created_on>2024-09-06 12:00:19</sys_created_on>
+        <sys_id>4ef450e4c3685e904de0d0cf05013132</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>UserSelector</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>sp_widget_4ef450e4c3685e904de0d0cf05013132</sys_update_name>
+        <sys_updated_by>C100219</sys_updated_by>
+        <sys_updated_on>2024-09-06 12:03:59</sys_updated_on>
+        <template><![CDATA[<div>
+  <label for="userSelector">Benutzer auswählen:</label>
+  <select id="userSelector" ng-model="c.selectedUser" ng-options="user.name for user in c.users" ng-change="c.onUserChange()">
+    <option value="">-- Bitte wählen --</option>
+  </select>
+
+  <div ng-if="c.selectedUserDetails">
+    <h3>Benutzerdetails:</h3>
+    <p>Name: {{c.selectedUserDetails.name}}</p>
+    <p>Email: {{c.selectedUserDetails.email}}</p>
+    <!-- Weitere Details hier hinzufügen -->
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

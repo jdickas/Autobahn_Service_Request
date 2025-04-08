@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="Bitte wählen Sie, ob Sie einen Projektordner für ein neues Projekt oder für ein Bestandsprojekt erstellen wollen:">f6b2a7c0c3ecda904de0d0cf0501312c</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>C100219</sys_created_by>
+        <sys_created_on>2024-09-05 13:47:09</sys_created_on>
+        <sys_id>94242b84c3ecda904de0d0cf0501310f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Projektordner für Bestandsprojekte anlegen.</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>question_choice_94242b84c3ecda904de0d0cf0501310f</sys_update_name>
+        <sys_updated_by>C100219</sys_updated_by>
+        <sys_updated_on>2024-09-05 13:47:09</sys_updated_on>
+        <text>Projektordner für Bestandsprojekte anlegen.</text>
+        <value>Projektordner für Bestandsprojekte anlegen</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=94242b84c3ecda904de0d0cf0501310f"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>94242b84c3ecda904de0d0cf0501310f</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>C100219</sys_created_by>
+        <sys_created_on>2024-09-05 13:47:09</sys_created_on>
+        <sys_id>6f24eb84c3ecda904de0d0cf050131ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>C100219</sys_updated_by>
+        <sys_updated_on>2024-09-05 13:47:09</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>94242b84c3ecda904de0d0cf0501310f</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>C100219</sys_created_by>
+        <sys_created_on>2024-09-05 13:47:09</sys_created_on>
+        <sys_id>2324eb84c3ecda904de0d0cf050131ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>C100219</sys_updated_by>
+        <sys_updated_on>2024-09-05 13:47:09</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>6150</order>
+        <sc_cat_item display_value="Ordner im Laufwerk P: neu erstellen">ee2bd704c3acda904de0d0cf0501315c</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>J100246</sys_created_by>
+        <sys_created_on>2024-09-16 14:37:54</sys_created_on>
+        <sys_id>8e49103fc3e0de104de0d0cf050131bb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>MRVS Select Approvers 3.Ordner im Laufwerk P: neu erstellen</sys_name>
+        <sys_package display_value="Autobahn Service Request" source="d80b6c02c3c04e502c03deee0501316f">d80b6c02c3c04e502c03deee0501316f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Autobahn Service Request">d80b6c02c3c04e502c03deee0501316f</sys_scope>
+        <sys_update_name>io_set_item_8e49103fc3e0de104de0d0cf050131bb</sys_update_name>
+        <sys_updated_by>J100246</sys_updated_by>
+        <sys_updated_on>2024-09-16 14:38:59</sys_updated_on>
+        <u_visible_on_notification>true</u_visible_on_notification>
+        <variable_set display_value="Angaben zu den Genehmigungsberechtigten des Unterordners „Grunderwerb/Vergabe&quot;">aa29503fc3e0de104de0d0cf05013132</variable_set>
+    </io_set_item>
+</record_update>
